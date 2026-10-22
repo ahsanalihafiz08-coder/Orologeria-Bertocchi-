@@ -1,0 +1,6 @@
+{
+  "name": "Orologeria Bertocchi F.Lli | Luxury Italian Watch Boutique",
+  "description": "Exclusive Italian watch boutique in Piacenza, Italy. Explore fine timepieces, dress watches, chronographs, and curated horology collections.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
