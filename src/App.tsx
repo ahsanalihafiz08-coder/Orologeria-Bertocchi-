@@ -26,8 +26,8 @@ import { BRAND_WATCHES_DATA } from './data/brandWatchesData';
 import { WatchCard } from './types/watch';
 import { CheckCircle2, ShoppingBag } from 'lucide-react';
 
-const STORAGE_KEY = 'bertocchi_luxury_favourites';
-const CART_STORAGE_KEY = 'bertocchi_luxury_cart';
+const STORAGE_KEY = 'intemporel_luxury_favourites';
+const CART_STORAGE_KEY = 'intemporel_luxury_cart';
 
 export default function App() {
   // 1. Favourites State with safe LocalStorage handling

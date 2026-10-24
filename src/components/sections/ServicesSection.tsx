@@ -43,7 +43,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
             Watch Collections & Inquiry Topics
           </h2>
           <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-            Browse our 36 distinct watch categories, style consultation topics, and gift ideas. Select any topic to view detailed information or request an appointment in Piacenza.
+            Browse our 36 distinct watch categories, style consultation topics, and gift ideas. Select any topic to view detailed information or request an appointment in Geneva.
           </p>
           <div className="w-16 h-0.5 bg-[#c5a059] mx-auto mt-4" />
         </div>
@@ -165,7 +165,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                         <span>{card.priceTag || '€14,800'}</span>
                       </div>
                       <span className="text-[10px] uppercase font-semibold text-[#94a3b8]">
-                        Bertocchi Curation
+                        Intemporel Curation
                       </span>
                     </div>
 

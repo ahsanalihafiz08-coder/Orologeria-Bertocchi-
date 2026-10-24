@@ -141,7 +141,7 @@ export const FavouritesDrawer: React.FC<FavouritesDrawerProps> = ({
 
         {/* Footer */}
         <div className="p-4 border-t border-[#e2e8f0] bg-[#f8f5ee] flex items-center justify-between">
-          <span className="text-xs text-[#475569]">Orologeria Bertocchi F.Lli</span>
+          <span className="text-xs text-[#475569]">Intemporel_geneve</span>
           <button
             onClick={onClose}
             className="px-4 py-2 rounded-lg bg-[#0c1b33] hover:bg-[#162a4d] text-white text-xs font-semibold uppercase tracking-wider transition-colors"

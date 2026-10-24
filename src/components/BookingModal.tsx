@@ -87,18 +87,18 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
 
   // Compose the WhatsApp message with user details
   const composedWhatsAppMessage = encodeURIComponent(
-    `*Richiesta Appuntamento - Orologeria Bertocchi F.Lli*\n\n` +
-      `*Oggetto / Modello:* ${formData.selectedItemName} (${formData.category})\n` +
-      `*Nome Cliente:* ${formData.fullName}\n` +
-      `*Telefono:* ${formData.phone}\n` +
+    `*Demande de Rendez-vous - Intemporel_geneve*\n\n` +
+      `*Objet / Modèle:* ${formData.selectedItemName} (${formData.category})\n` +
+      `*Nom Client:* ${formData.fullName}\n` +
+      `*Téléphone:* ${formData.phone}\n` +
       `*Email:* ${formData.email}\n` +
-      `*Data Preferita:* ${formData.preferredDate}\n` +
-      `*Orario Preferito:* ${formData.preferredTime}\n` +
-      (formData.message ? `*Messaggio:* ${formData.message}\n` : '') +
-      `\nInvio questa richiesta per concordare un appuntamento presso la boutique di Piacenza.`
+      `*Date Souhaitée:* ${formData.preferredDate}\n` +
+      `*Heure Souhaitée:* ${formData.preferredTime}\n` +
+      (formData.message ? `*Message:* ${formData.message}\n` : '') +
+      `\nDemande de rendez-vous auprès de la boutique Intemporel_geneve (Route des Jeunes 4bis, Genève).`
   );
 
-  const whatsAppDirectUrl = `https://wa.me/390523322357?text=${composedWhatsAppMessage}`;
+  const whatsAppDirectUrl = `https://wa.me/41799660156?text=${composedWhatsAppMessage}`;
 
   return (
     <div
@@ -159,7 +159,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
                 {item.name}
               </h3>
               <p className="text-xs text-[#475569] mt-0.5">
-                Location: Orologeria Bertocchi F.Lli — Via Calzolai, 65f, Piacenza
+                Location: Intemporel_geneve — Route des Jeunes 4bis, Geneva, Switzerland, 1227
               </p>
             </div>
           </div>
@@ -390,7 +390,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
                 </a>
 
                 <a
-                  href="tel:+390523322357"
+                  href="tel:+41799660156"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#0c1b33] hover:bg-[#162a4d] text-white font-semibold text-sm transition-all"
                 >
                   <Phone className="w-4 h-4 text-[#c5a059]" />

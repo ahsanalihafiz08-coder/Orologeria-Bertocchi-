@@ -9,7 +9,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onDiscoverMore }) =>
   return (
     <section
       id="about"
-      aria-label="About Orologeria Bertocchi F.Lli"
+      aria-label="About Intemporel_geneve"
       className="py-16 lg:py-24 bg-[#fcfbfa] border-b border-[#e2e8f0]"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,7 +25,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onDiscoverMore }) =>
           </div>
 
           <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-3xl mx-auto">
-            In the heart of historic Piacenza, <strong className="text-[#0c1b33] font-semibold">Orologeria Bertocchi F.Lli</strong> welcomes watch enthusiasts, collectors, and those seeking an exceptional timepiece that reflects their personal character.
+            In the heart of Geneva, Switzerland, <strong className="text-[#0c1b33] font-semibold">Intemporel_geneve</strong> welcomes watch enthusiasts, collectors, and those seeking an exceptional timepiece that reflects their personal character.
           </p>
 
           <p className="text-sm sm:text-base text-[#475569] leading-relaxed max-w-3xl mx-auto">

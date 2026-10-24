@@ -27,7 +27,7 @@ const ORIGINAL_REVIEWS: CustomerReview[] = [
     rating: 5,
     dateBadge: 'Verified Google Review',
     content:
-      'I recently visited Gioelleria Fratelli Bertocchi to purchase a Rolex watch, and I must say I was truly impressed! Bertocchi was very welcoming and professional, friendly and helpful, and the selection of watches was impressive. The Rolex I purchased is absolutely fantastic; the quality and precision are exceptional, and the design is exactly what I expected. The price was very competitive, and the warranty offered by the jewelry store gave me even more confidence in my purchase. Gicielleria Fratelli Bertocchi is a true reference point for seeking high-quality watches and jewelry. I highly recommend this jewelry store to anyone looking for a unique and satisfying shopping experience. I will definitely be back in the future! My daughter thank you!',
+      'I recently visited Intemporel_geneve to purchase a Rolex watch, and I must say I was truly impressed! The boutique was very welcoming and professional, friendly and helpful, and the selection of watches was impressive. The Rolex I purchased is absolutely fantastic; the quality and precision are exceptional, and the design is exactly what I expected. The price was very competitive, and the warranty offered gave me even more confidence in my purchase. Intemporel_geneve is a true reference point for seeking high-quality watches. I highly recommend this boutique to anyone looking for a unique and satisfying shopping experience. I will definitely be back in the future! My daughter thank you!',
   },
   {
     id: 'rev-3',
@@ -198,7 +198,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
                       {review.author}
                     </h4>
                     <p className="text-[10px] text-[#64748b]">
-                      Piacenza, Italy • Google Review
+                      Geneva, Switzerland • Google Review
                     </p>
                   </div>
                   <div className="w-8 h-8 rounded-full bg-[#f4efe6] border border-[#e2e8f0] flex items-center justify-center text-xs font-bold text-[#c5a059]">
@@ -233,7 +233,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#0c1b33] hover:bg-[#162a4d] text-white text-xs font-semibold uppercase tracking-widest transition-colors shadow-sm cursor-pointer"
           >
             <MapPin className="w-3.5 h-3.5 text-[#c5a059]" />
-            <span>Visit Us at Via Calzolai 65f, Piacenza</span>
+            <span>Visit Us at Route des Jeunes 4bis, Geneva</span>
           </button>
         </div>
       </div>

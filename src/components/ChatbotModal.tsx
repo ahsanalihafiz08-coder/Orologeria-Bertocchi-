@@ -27,7 +27,7 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
     {
       id: 'welcome-1',
       sender: 'bot',
-      text: 'Buongiorno! Welcome to Orologeria Bertocchi F.Lli in Piacenza. I am your digital boutique assistant. How may I assist you with our timepieces and services today?',
+      text: 'Bonjour! Welcome to Intemporel_geneve in Geneva, Switzerland. I am your digital boutique assistant. How may I assist you with our timepieces and services today?',
     },
   ]);
   const [input, setInput] = useState('');
@@ -58,8 +58,8 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
       let botResponse = '';
       let botAction: { label: string; onClick: () => void } | undefined = undefined;
 
-      if (q.includes('address') || q.includes('where') || q.includes('location') || q.includes('piacenza') || q.includes('find you')) {
-        botResponse = 'Our boutique is located at Via Calzolai, 65f, 29121 Piacenza PC, Italy. We welcome you to visit us in historic Piacenza.';
+      if (q.includes('address') || q.includes('where') || q.includes('location') || q.includes('geneva') || q.includes('geneve') || q.includes('find you')) {
+        botResponse = 'Our boutique is located at Route des Jeunes 4bis, Geneva, Switzerland, 1227. We welcome you to visit us in Geneva.';
         botAction = {
           label: 'View Contact & Map Section',
           onClick: () => {
@@ -68,23 +68,31 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
           },
         };
       } else if (q.includes('phone') || q.includes('call') || q.includes('telephone') || q.includes('number')) {
-        botResponse = 'You can reach Orologeria Bertocchi F.Lli directly at +39 0523 322357 during store opening periods.';
+        botResponse = 'You can reach Intemporel_geneve directly at +41 79 966 01 56 during store opening periods.';
         botAction = {
-          label: 'Call +39 0523 322357',
+          label: 'Call +41 79 966 01 56',
           onClick: () => {
-            window.location.href = 'tel:+390523322357';
+            window.location.href = 'tel:+41799660156';
           },
         };
       } else if (q.includes('whatsapp') || q.includes('chat') || q.includes('message')) {
-        botResponse = 'You can chat directly with our boutique via official WhatsApp at +39 0523 322357.';
+        botResponse = 'You can chat directly with our boutique via official WhatsApp at +41 79 966 01 56.';
         botAction = {
           label: 'Open WhatsApp Chat',
           onClick: () => {
-            window.open('https://wa.me/390523322357', '_blank');
+            window.open('https://wa.me/41799660156', '_blank');
+          },
+        };
+      } else if (q.includes('email') || q.includes('mail')) {
+        botResponse = 'You can email our boutique directly at contact@intemporel-collection.ch.';
+        botAction = {
+          label: 'Send Email',
+          onClick: () => {
+            window.location.href = 'mailto:contact@intemporel-collection.ch';
           },
         };
       } else if (q.includes('appointment') || q.includes('book') || q.includes('booking') || q.includes('visit') || q.includes('consult')) {
-        botResponse = 'You can request an appointment enquiry by selecting "Booking View" on any of our 9 Portfolio timepieces or 36 Service cards. You can also contact us directly by telephone or WhatsApp.';
+        botResponse = 'You can request an appointment enquiry by selecting "Booking View" on any of our Portfolio timepieces or Service cards. You can also contact us directly by telephone or WhatsApp.';
         botAction = {
           label: 'Explore Portfolio Collection',
           onClick: () => {
@@ -93,7 +101,7 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
           },
         };
       } else if (q.includes('portfolio') || q.includes('collection') || q.includes('models') || q.includes('watches') || q.includes('category') || q.includes('categories')) {
-        botResponse = 'We present 9 curated portfolio categories—including Classic Dress Watches, Contemporary Watches, Automatic Mechanicals, Elegant Women’s Watches, Sport Watches, and Chronographs—plus 36 detailed enquiry topics in our Services section.';
+        botResponse = 'We present curated portfolio categories—including Classic Dress Watches, Contemporary Watches, Automatic Mechanicals, Elegant Women’s Watches, Sport Watches, and Chronographs—plus 36 detailed enquiry topics in our Services section.';
         botAction = {
           label: 'Go to Portfolio',
           onClick: () => {
@@ -111,7 +119,7 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
           },
         };
       } else if (q.includes('rating') || q.includes('review') || q.includes('reputation') || q.includes('trust')) {
-        botResponse = 'Orologeria Bertocchi F.Lli holds a customer rating of 4.6 out of 5 stars across 30 customer reviews. We pride ourselves on attentive, courteous service.';
+        botResponse = 'Intemporel_geneve holds a customer rating of 4.6 out of 5 stars across 30 customer reviews. We pride ourselves on attentive, courteous service.';
         botAction = {
           label: 'View Customer Trust Section',
           onClick: () => {
@@ -119,12 +127,12 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
             onNavigateSection('testimonials');
           },
         };
-      } else if (q.includes('price') || q.includes('cost') || q.includes('how much') || q.includes('euro')) {
+      } else if (q.includes('price') || q.includes('cost') || q.includes('how much') || q.includes('euro') || q.includes('chf')) {
         botResponse = 'In accordance with luxury horological guidelines, prices are provided on enquiry based on specific configurations and availability. You can click "Booking View" or contact us via WhatsApp for precise pricing.';
       } else if (q.includes('hours') || q.includes('open') || q.includes('time') || q.includes('when')) {
-        botResponse = 'For specific daily opening hours or holiday schedules, please call us directly at +39 0523 322357 or send a quick WhatsApp message to ensure the boutique is open for your visit.';
+        botResponse = 'For specific daily opening hours or holiday schedules, please call us directly at +41 79 966 01 56 or send a quick WhatsApp message to ensure the boutique is open for your visit.';
       } else {
-        botResponse = 'Thank you for your question. Orologeria Bertocchi F.Lli is located at Via Calzolai, 65f in Piacenza, Italy (+39 0523 322357). Would you like to explore our Portfolio or contact us on WhatsApp?';
+        botResponse = 'Thank you for your question. Intemporel_geneve is located at Route des Jeunes 4bis, Geneva, Switzerland, 1227 (+41 79 966 01 56). Would you like to explore our Portfolio or contact us on WhatsApp?';
         botAction = {
           label: 'View Collection',
           onClick: () => {
@@ -149,6 +157,7 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
   const quickChips = [
     '📍 Address & Location',
     '📞 Boutique Phone',
+    '✉️ Boutique Email',
     '⌚ Watch Categories',
     '📅 Appointment Enquiry',
     '💬 WhatsApp Us',
@@ -168,7 +177,7 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
           </div>
           <div>
             <h3 className="text-sm font-semibold tracking-wide">Boutique Assistant</h3>
-            <span className="text-[10px] text-[#dfc181] block">Orologeria Bertocchi F.Lli</span>
+            <span className="text-[10px] text-[#dfc181] block">Intemporel_geneve</span>
           </div>
         </div>
         <button

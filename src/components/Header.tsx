@@ -73,7 +73,7 @@ export const Header: React.FC<HeaderProps> = ({
                     isScrolled ? 'text-[#0c1b33]' : 'text-white drop-shadow-md'
                   }`}
                 >
-                  Orologeria Bertocchi F.Lli
+                  Intemporel_geneve
                 </span>
               </a>
             </div>
@@ -82,9 +82,9 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="flex items-center gap-2 sm:gap-2.5 shrink-0 ml-auto">
               {/* 1. Phone Call Icon */}
               <a
-                href="tel:+390523322357"
-                aria-label="Call +39 0523 322357"
-                title="Call Boutique: +39 0523 322357"
+                href="tel:+41799660156"
+                aria-label="Call +41 79 966 01 56"
+                title="Call Boutique: +41 79 966 01 56"
                 className={`w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-full border transition-all shadow-2xs shrink-0 ${
                   isScrolled
                     ? 'border-[#e2e8f0] bg-white hover:bg-[#f4efe6] text-[#0c1b33] hover:text-[#c5a059] hover:border-[#c5a059]'
@@ -161,7 +161,7 @@ export const Header: React.FC<HeaderProps> = ({
                   Boutique Navigation
                 </span>
                 <h3 className="font-serif text-lg font-bold text-[#0c1b33]">
-                  Orologeria Bertocchi F.Lli
+                  Intemporel_geneve
                 </h3>
               </div>
               <button
@@ -192,14 +192,14 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Drawer Footer */}
             <div className="p-5 border-t border-[#e2e8f0] bg-[#f8f5ee] space-y-3">
               <a
-                href="tel:+390523322357"
+                href="tel:+41799660156"
                 className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#0c1b33] text-white text-xs font-semibold uppercase tracking-wider hover:bg-[#162a4d] transition-colors shadow-xs"
               >
                 <Phone className="w-3.5 h-3.5 text-[#c5a059]" />
-                <span>Call +39 0523 322357</span>
+                <span>Call +41 79 966 01 56</span>
               </a>
               <p className="text-[11px] text-[#475569] text-center">
-                Via Calzolai, 65f, 29121 Piacenza PC, Italy
+                Route des Jeunes 4bis, Geneva, Switzerland, 1227
               </p>
             </div>
           </div>

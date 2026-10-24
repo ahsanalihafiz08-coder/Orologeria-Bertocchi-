@@ -41,7 +41,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Boutique Subtitle Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#fcfbfa]/10 backdrop-blur-md border border-[#c5a059]/40 text-xs font-semibold tracking-widest text-[#dfc181] uppercase shadow-lg">
             <Sparkles className="w-3.5 h-3.5 text-[#c5a059]" />
-            <span>Orologeria Bertocchi F.Lli • Piacenza, Italy</span>
+            <span>Intemporel_geneve • Geneva, Switzerland</span>
           </div>
 
           {/* Hero Headline */}
@@ -49,7 +49,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.12] drop-shadow-md">
               TIMELESS CRAFTSMANSHIP.{' '}
               <span className="block italic text-[#dfc181] font-normal mt-1">
-                ITALIAN ELEGANCE.
+                SWISS ELEGANCE.
               </span>
             </h1>
             <p className="text-xs sm:text-base lg:text-lg text-slate-200 max-w-2xl mx-auto font-normal leading-snug sm:leading-relaxed drop-shadow-sm px-2 sm:px-0">
@@ -79,7 +79,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="pt-4 sm:pt-6 border-t border-white/15 max-w-xl mx-auto flex items-center justify-center gap-6 sm:gap-10 text-slate-300 text-xs">
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-[#c5a059]" />
-              <span>Via Calzolai, 65f — Piacenza</span>
+              <span>Route des Jeunes 4bis — Geneva</span>
             </div>
             <div className="h-3 w-px bg-white/20" />
             <div className="flex items-center gap-2">
