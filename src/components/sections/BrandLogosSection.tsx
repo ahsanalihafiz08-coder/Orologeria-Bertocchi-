@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Heart, Eye, Calendar, X, ChevronDown, ChevronUp } from 'lucide-react';
 import { BRAND_WATCHES_DATA, BRAND_LIST } from '../../data/brandWatchesData';
 import { WatchCard } from '../../types/watch';
+import { getLuxuryWatchPlaceholder } from '../../utils/imageFallback';
 import {
   RolexLogo,
   PatekLogo,
@@ -183,8 +184,8 @@ export const BrandLogosSection: React.FC<BrandLogosSectionProps> = ({
                         loading="lazy"
                         onError={(e) => {
                           const target = e.currentTarget;
-                          if (!target.src.includes('fallback_watch')) {
-                            target.src = '/assets/images/fallback_watch.jpg';
+                          if (!target.src.startsWith('data:image/svg+xml')) {
+                            target.src = getLuxuryWatchPlaceholder(card.name);
                           }
                         }}
                       />

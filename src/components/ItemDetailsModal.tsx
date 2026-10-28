@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { X, Phone, Calendar, Check, ShieldCheck, Heart, Tag } from 'lucide-react';
 import { WatchCard } from '../types/watch';
 import { WhatsAppIcon } from './icons/BrandIcons';
+import { getLuxuryWatchPlaceholder } from '../utils/imageFallback';
 
 interface ItemDetailsModalProps {
   item: WatchCard | null;
@@ -107,8 +108,8 @@ export const ItemDetailsModal: React.FC<ItemDetailsModalProps> = ({
                 loading="eager"
                 onError={(e) => {
                   const target = e.currentTarget;
-                  if (!target.src.includes('Rolex-Datejust-on-stone-background')) {
-                    target.src = '/assets/images/PZ3zjT3Q_Rolex-Datejust-on-stone-background-20261020014018.jpg';
+                  if (!target.src.startsWith('data:image/svg+xml')) {
+                    target.src = getLuxuryWatchPlaceholder(item.name);
                   }
                 }}
               />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heart, Eye, Sparkles, Tag } from 'lucide-react';
 import { WatchCard } from '../../types/watch';
+import { getLuxuryWatchPlaceholder } from '../../utils/imageFallback';
 
 interface PortfolioSectionProps {
   cards: WatchCard[];
@@ -58,8 +59,8 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                     loading="lazy"
                     onError={(e) => {
                       const target = e.currentTarget;
-                      if (!target.src.includes('Breguet-watch-on-textured-surface')) {
-                        target.src = '/assets/images/jP7Zsq0q_Breguet-watch-on-textured-surface-20261020020635.jpg';
+                      if (!target.src.startsWith('data:image/svg+xml')) {
+                        target.src = getLuxuryWatchPlaceholder(card.name);
                       }
                     }}
                   />

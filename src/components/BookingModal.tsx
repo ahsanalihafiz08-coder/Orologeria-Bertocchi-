@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { X, ArrowLeft, Send, CheckCircle2, Shield, Calendar, Clock, User, Phone, Mail, FileText, AlertCircle } from 'lucide-react';
 import { WatchCard, BookingFormData } from '../types/watch';
 import { WhatsAppIcon } from './icons/BrandIcons';
+import { getLuxuryWatchPlaceholder } from '../utils/imageFallback';
 
 interface BookingModalProps {
   item: WatchCard | null;
@@ -146,8 +147,8 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
               className="w-16 h-16 rounded-lg object-cover border border-[#cbd5e1] shrink-0"
               onError={(e) => {
                 const target = e.currentTarget;
-                if (!target.src.includes('Rolex-Datejust-on-stone-background')) {
-                  target.src = '/assets/images/PZ3zjT3Q_Rolex-Datejust-on-stone-background-20261020014018.jpg';
+                if (!target.src.startsWith('data:image/svg+xml')) {
+                  target.src = getLuxuryWatchPlaceholder(item.name);
                 }
               }}
             />

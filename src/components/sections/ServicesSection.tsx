@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Heart, Eye, Calendar, Tag, Filter, ShoppingBag } from 'lucide-react';
 import { WatchCard } from '../../types/watch';
 import { SERVICES_CATEGORIES } from '../../data/servicesData';
+import { getLuxuryWatchPlaceholder } from '../../utils/imageFallback';
 
 interface ServicesSectionProps {
   cards: WatchCard[];
@@ -106,8 +107,8 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                     loading="lazy"
                     onError={(e) => {
                       const target = e.currentTarget;
-                      if (!target.src.includes('Rolex-Datejust-on-stone-background')) {
-                        target.src = '/assets/images/PZ3zjT3Q_Rolex-Datejust-on-stone-background-20261020014018.jpg';
+                      if (!target.src.startsWith('data:image/svg+xml')) {
+                        target.src = getLuxuryWatchPlaceholder(card.name);
                       }
                     }}
                   />

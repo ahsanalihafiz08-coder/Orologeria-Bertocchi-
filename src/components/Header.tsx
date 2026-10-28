@@ -69,7 +69,7 @@ export const Header: React.FC<HeaderProps> = ({
                 className="group flex items-center select-none min-w-0"
               >
                 <span
-                  className={`font-serif text-[13px] sm:text-sm md:text-base lg:text-[17px] font-bold tracking-wide uppercase transition-colors whitespace-nowrap truncate max-w-[200px] sm:max-w-none ${
+                  className={`font-serif text-[15px] sm:text-base md:text-lg lg:text-[19px] font-bold tracking-wide uppercase transition-colors whitespace-nowrap ${
                     isScrolled ? 'text-[#0c1b33]' : 'text-white drop-shadow-md'
                   }`}
                 >
