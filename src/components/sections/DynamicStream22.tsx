@@ -77,6 +77,12 @@ export const DynamicStream22: React.FC<DynamicStream22Props> = ({
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.src.includes('fallback_watch')) {
+                        target.src = '/assets/images/fallback_watch.jpg';
+                      }
+                    }}
                   />
 
                   {/* Top-right heart (wishlist) */}

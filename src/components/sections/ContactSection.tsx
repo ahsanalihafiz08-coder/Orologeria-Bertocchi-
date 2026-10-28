@@ -25,7 +25,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
     'https://www.facebook.com/Intemporel.Geneve';
   const whatsAppUrl =
     'https://wa.me/41799660156?text=Bonjour%20Intemporel_geneve,%20je%20souhaite%20des%20informations.';
-  const emailAddress = 'contact@intemporel-collection.ch';
+  const emailAddress = 'contact@intemporel-geneve.ch';
 
   return (
     <section

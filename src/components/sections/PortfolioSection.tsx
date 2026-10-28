@@ -59,7 +59,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                     onError={(e) => {
                       const target = e.currentTarget;
                       if (!target.src.includes('Breguet-watch-on-textured-surface')) {
-                        target.src = 'https://i.ibb.co/jP7Zsq0q/Breguet-watch-on-textured-surface-20261020020635.jpg';
+                        target.src = '/assets/images/jP7Zsq0q_Breguet-watch-on-textured-surface-20261020020635.jpg';
                       }
                     }}
                   />

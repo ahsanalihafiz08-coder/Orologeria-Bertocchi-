@@ -107,7 +107,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                     onError={(e) => {
                       const target = e.currentTarget;
                       if (!target.src.includes('Rolex-Datejust-on-stone-background')) {
-                        target.src = 'https://i.ibb.co/PZ3zjT3Q/Rolex-Datejust-on-stone-background-20261020014018.jpg';
+                        target.src = '/assets/images/PZ3zjT3Q_Rolex-Datejust-on-stone-background-20261020014018.jpg';
                       }
                     }}
                   />

@@ -84,11 +84,11 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
           },
         };
       } else if (q.includes('email') || q.includes('mail')) {
-        botResponse = 'You can email our boutique directly at contact@intemporel-collection.ch.';
+        botResponse = 'You can email our boutique directly at contact@intemporel-geneve.ch.';
         botAction = {
           label: 'Send Email',
           onClick: () => {
-            window.location.href = 'mailto:contact@intemporel-collection.ch';
+            window.location.href = 'mailto:contact@intemporel-geneve.ch';
           },
         };
       } else if (q.includes('appointment') || q.includes('book') || q.includes('booking') || q.includes('visit') || q.includes('consult')) {

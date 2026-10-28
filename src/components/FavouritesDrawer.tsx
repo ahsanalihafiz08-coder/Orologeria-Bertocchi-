@@ -89,6 +89,12 @@ export const FavouritesDrawer: React.FC<FavouritesDrawerProps> = ({
                       src={item.image}
                       alt={item.name}
                       className="w-16 h-16 rounded-lg object-cover border border-[#cbd5e1] shrink-0"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (!target.src.includes('fallback_watch')) {
+                          target.src = '/assets/images/fallback_watch.jpg';
+                        }
+                      }}
                     />
                     <div className="flex-1 min-w-0">
                       <span className="text-[10px] font-semibold tracking-wider uppercase text-[#c5a059] block">

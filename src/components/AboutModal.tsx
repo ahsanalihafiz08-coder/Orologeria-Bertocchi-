@@ -64,7 +64,7 @@ export const AboutModal: React.FC<AboutModalProps> = ({
         <div className="p-6 overflow-y-auto space-y-6 text-[#475569] text-sm leading-relaxed">
           <div className="aspect-16/9 rounded-xl overflow-hidden bg-[#f4efe6] border border-[#e2e8f0]">
             <img
-              src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1200&q=80"
+              src="/assets/images/boutique_horology_atmosphere.jpg"
               alt="Boutique horology atmosphere"
               className="w-full h-full object-cover"
             />
