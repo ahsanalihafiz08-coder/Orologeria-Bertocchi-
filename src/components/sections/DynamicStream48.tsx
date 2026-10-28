@@ -44,6 +44,13 @@ export const DynamicStream48: React.FC<DynamicStream48Props> = ({
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             loading="lazy"
+            onError={(e) => {
+              const t = e.currentTarget;
+              if (t.src.includes('i.ibb.co/')) {
+                const p = t.src.split('i.ibb.co/')[1];
+                if (p) t.src = '/assets/images/' + p.replace('/', '_');
+              }
+            }}
           />
 
           {/* Price Tag mentioned clearly */}

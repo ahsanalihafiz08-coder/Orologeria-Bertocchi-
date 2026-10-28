@@ -144,6 +144,13 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
               alt={item.name}
               referrerPolicy="no-referrer"
               className="w-16 h-16 rounded-lg object-cover border border-[#cbd5e1] shrink-0"
+              onError={(e) => {
+                const t = e.currentTarget;
+                if (t.src.includes('i.ibb.co/')) {
+                  const p = t.src.split('i.ibb.co/')[1];
+                  if (p) t.src = '/assets/images/' + p.replace('/', '_');
+                }
+              }}
             />
             <div className="min-w-0">
               <span className="text-[11px] font-semibold tracking-wider uppercase text-[#c5a059] block">

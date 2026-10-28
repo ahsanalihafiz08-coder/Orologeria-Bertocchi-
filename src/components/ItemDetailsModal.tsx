@@ -105,6 +105,13 @@ export const ItemDetailsModal: React.FC<ItemDetailsModalProps> = ({
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="eager"
+                onError={(e) => {
+                  const t = e.currentTarget;
+                  if (t.src.includes('i.ibb.co/')) {
+                    const p = t.src.split('i.ibb.co/')[1];
+                    if (p) t.src = '/assets/images/' + p.replace('/', '_');
+                  }
+                }}
               />
               <div className="absolute top-3 left-3 bg-[#0c1b33]/90 text-[#fcfbfa] px-3 py-1 rounded-full text-xs font-medium tracking-wide backdrop-blur-sm border border-white/10">
                 {item.priceTag || '€14,800'}
