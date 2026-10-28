@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Heart, Eye, Calendar, Tag, Filter, ShoppingBag } from 'lucide-react';
 import { WatchCard } from '../../types/watch';
 import { SERVICES_CATEGORIES } from '../../data/servicesData';
-import { getLuxuryWatchPlaceholder } from '../../utils/imageFallback';
 
 interface ServicesSectionProps {
   cards: WatchCard[];
@@ -105,12 +104,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
-                    onError={(e) => {
-                      const target = e.currentTarget;
-                      if (!target.src.startsWith('data:image/svg+xml')) {
-                        target.src = getLuxuryWatchPlaceholder(card.name);
-                      }
-                    }}
                   />
 
                   {/* Price Tag mentioned on the left side */}

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { X, Phone, Calendar, Check, ShieldCheck, Heart, Tag } from 'lucide-react';
 import { WatchCard } from '../types/watch';
 import { WhatsAppIcon } from './icons/BrandIcons';
-import { getLuxuryWatchPlaceholder } from '../utils/imageFallback';
 
 interface ItemDetailsModalProps {
   item: WatchCard | null;
@@ -106,12 +105,6 @@ export const ItemDetailsModal: React.FC<ItemDetailsModalProps> = ({
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="eager"
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  if (!target.src.startsWith('data:image/svg+xml')) {
-                    target.src = getLuxuryWatchPlaceholder(item.name);
-                  }
-                }}
               />
               <div className="absolute top-3 left-3 bg-[#0c1b33]/90 text-[#fcfbfa] px-3 py-1 rounded-full text-xs font-medium tracking-wide backdrop-blur-sm border border-white/10">
                 {item.priceTag || '€14,800'}

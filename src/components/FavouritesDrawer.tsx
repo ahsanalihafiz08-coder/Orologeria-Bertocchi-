@@ -1,7 +1,6 @@
 import React from 'react';
 import { X, Heart, Trash2, Calendar, Eye, ArrowRight } from 'lucide-react';
 import { WatchCard } from '../types/watch';
-import { getLuxuryWatchPlaceholder } from '../utils/imageFallback';
 
 interface FavouritesDrawerProps {
   isOpen: boolean;
@@ -90,12 +89,6 @@ export const FavouritesDrawer: React.FC<FavouritesDrawerProps> = ({
                       src={item.image}
                       alt={item.name}
                       className="w-16 h-16 rounded-lg object-cover border border-[#cbd5e1] shrink-0"
-                      onError={(e) => {
-                        const target = e.currentTarget;
-                        if (!target.src.startsWith('data:image/svg+xml')) {
-                          target.src = getLuxuryWatchPlaceholder(item.name);
-                        }
-                      }}
                     />
                     <div className="flex-1 min-w-0">
                       <span className="text-[10px] font-semibold tracking-wider uppercase text-[#c5a059] block">

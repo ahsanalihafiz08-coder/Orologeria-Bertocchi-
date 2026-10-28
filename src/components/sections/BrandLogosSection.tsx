@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Heart, Eye, Calendar, X, ChevronDown, ChevronUp } from 'lucide-react';
 import { BRAND_WATCHES_DATA, BRAND_LIST } from '../../data/brandWatchesData';
 import { WatchCard } from '../../types/watch';
-import { getLuxuryWatchPlaceholder } from '../../utils/imageFallback';
 import {
   RolexLogo,
   PatekLogo,
@@ -182,12 +181,6 @@ export const BrandLogosSection: React.FC<BrandLogosSectionProps> = ({
                         alt={card.name}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"
-                        onError={(e) => {
-                          const target = e.currentTarget;
-                          if (!target.src.startsWith('data:image/svg+xml')) {
-                            target.src = getLuxuryWatchPlaceholder(card.name);
-                          }
-                        }}
                       />
 
                       {/* Wishlist toggle */}

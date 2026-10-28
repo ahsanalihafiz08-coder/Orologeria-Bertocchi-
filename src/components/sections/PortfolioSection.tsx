@@ -1,7 +1,6 @@
 import React from 'react';
 import { Heart, Eye, Sparkles, Tag } from 'lucide-react';
 import { WatchCard } from '../../types/watch';
-import { getLuxuryWatchPlaceholder } from '../../utils/imageFallback';
 
 interface PortfolioSectionProps {
   cards: WatchCard[];
@@ -57,12 +56,6 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
-                    onError={(e) => {
-                      const target = e.currentTarget;
-                      if (!target.src.startsWith('data:image/svg+xml')) {
-                        target.src = getLuxuryWatchPlaceholder(card.name);
-                      }
-                    }}
                   />
 
                   {/* Price Tag Mentioned on Image */}

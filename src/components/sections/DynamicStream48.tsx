@@ -2,7 +2,6 @@ import React from 'react';
 import { Sparkles, Heart } from 'lucide-react';
 import { WatchCard } from '../../types/watch';
 import { BRAND_WATCHES_DATA } from '../../data/brandWatchesData';
-import { getLuxuryWatchPlaceholder } from '../../utils/imageFallback';
 
 interface DynamicStream48Props {
   favouriteIds: Set<string>;
@@ -45,12 +44,6 @@ export const DynamicStream48: React.FC<DynamicStream48Props> = ({
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             loading="lazy"
-            onError={(e) => {
-              const target = e.currentTarget;
-              if (!target.src.startsWith('data:image/svg+xml')) {
-                target.src = getLuxuryWatchPlaceholder(card.name);
-              }
-            }}
           />
 
           {/* Price Tag mentioned clearly */}

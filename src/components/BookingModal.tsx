@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { X, ArrowLeft, Send, CheckCircle2, Shield, Calendar, Clock, User, Phone, Mail, FileText, AlertCircle } from 'lucide-react';
 import { WatchCard, BookingFormData } from '../types/watch';
 import { WhatsAppIcon } from './icons/BrandIcons';
-import { getLuxuryWatchPlaceholder } from '../utils/imageFallback';
 
 interface BookingModalProps {
   item: WatchCard | null;
@@ -145,12 +144,6 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
               alt={item.name}
               referrerPolicy="no-referrer"
               className="w-16 h-16 rounded-lg object-cover border border-[#cbd5e1] shrink-0"
-              onError={(e) => {
-                const target = e.currentTarget;
-                if (!target.src.startsWith('data:image/svg+xml')) {
-                  target.src = getLuxuryWatchPlaceholder(item.name);
-                }
-              }}
             />
             <div className="min-w-0">
               <span className="text-[11px] font-semibold tracking-wider uppercase text-[#c5a059] block">
