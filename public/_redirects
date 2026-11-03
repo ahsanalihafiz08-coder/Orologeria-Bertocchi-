@@ -1,1 +1,5 @@
-/*    /index.html   200
+# Static assets alias
+/assets/images/*  /images/:splat  200
+
+# Single Page App routing
+/*  /index.html  200

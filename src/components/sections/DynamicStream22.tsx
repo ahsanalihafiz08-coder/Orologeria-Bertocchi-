@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Heart, Award, ArrowUpRight } from 'lucide-react';
 import { WatchCard } from '../../types/watch';
 import { BRAND_WATCHES_DATA } from '../../data/brandWatchesData';
+import { handleImageError, resolveLocalImagePath } from '../../utils/imageUtils';
 
 interface DynamicStream22Props {
   favouriteIds: Set<string>;
@@ -72,18 +73,14 @@ export const DynamicStream22: React.FC<DynamicStream22Props> = ({
                 {/* Image */}
                 <div className="relative h-[150px] sm:h-[210px] overflow-hidden bg-[#f4efe6]">
                   <img
-                    src={card.image}
+                    src={resolveLocalImagePath(card.image)}
                     alt={card.name}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                    onError={(e) => {
-                      const t = e.currentTarget;
-                      if (t.src.includes('i.ibb.co/')) {
-                        const p = t.src.split('i.ibb.co/')[1];
-                        if (p) t.src = '/assets/images/' + p.replace('/', '_');
-                      }
-                    }}
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="sync"
+                    onError={handleImageError}
                   />
 
                   {/* Top-right heart (wishlist) */}

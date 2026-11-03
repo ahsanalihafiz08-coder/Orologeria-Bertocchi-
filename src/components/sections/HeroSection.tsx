@@ -10,7 +10,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onExplorePortfolio,
   onNavigateContact,
 }) => {
-  const videoSrc =
+  const localVideoSrc = '/videos/Rolex_watch_assembling_and_rotating_20261020044132.mp4';
+  const remoteVideoSrc =
     'https://res.cloudinary.com/o82tprxi/video/upload/v1792454527/Rolex_watch_assembling_and_rotating_20261020044132.mp4';
 
   return (
@@ -28,7 +29,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           playsInline
           className="w-full h-full object-cover object-center pointer-events-none"
         >
-          <source src={videoSrc} type="video/mp4" />
+          <source src={localVideoSrc} type="video/mp4" />
+          <source src={remoteVideoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Editorial luxury dark navy & gold overlay for pristine contrast */}

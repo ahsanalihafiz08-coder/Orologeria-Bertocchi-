@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { X, MapPin, Phone, Compass, Award, Clock } from 'lucide-react';
 import { WhatsAppIcon } from './icons/BrandIcons';
+import { handleImageError, resolveLocalImagePath } from '../utils/imageUtils';
 
 interface AboutModalProps {
   isOpen: boolean;
@@ -64,9 +65,13 @@ export const AboutModal: React.FC<AboutModalProps> = ({
         <div className="p-6 overflow-y-auto space-y-6 text-[#475569] text-sm leading-relaxed">
           <div className="aspect-16/9 rounded-xl overflow-hidden bg-[#f4efe6] border border-[#e2e8f0]">
             <img
-              src="/assets/images/boutique_horology_atmosphere.jpg"
+              src={resolveLocalImagePath('/images/boutique_horology_atmosphere.jpg')}
               alt="Boutique horology atmosphere"
               className="w-full h-full object-cover"
+              loading="eager"
+              fetchPriority="high"
+              decoding="sync"
+              onError={handleImageError}
             />
           </div>
 

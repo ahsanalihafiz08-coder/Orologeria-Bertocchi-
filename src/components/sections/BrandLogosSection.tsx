@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Heart, Eye, Calendar, X, ChevronDown, ChevronUp } from 'lucide-react';
 import { BRAND_WATCHES_DATA, BRAND_LIST } from '../../data/brandWatchesData';
 import { WatchCard } from '../../types/watch';
+import { handleImageError, resolveLocalImagePath } from '../../utils/imageUtils';
 import {
   RolexLogo,
   PatekLogo,
@@ -177,17 +178,14 @@ export const BrandLogosSection: React.FC<BrandLogosSectionProps> = ({
                     {/* Watch Image */}
                     <div className="relative aspect-4/3 overflow-hidden bg-[#f4efe6]">
                       <img
-                        src={card.image}
+                        src={resolveLocalImagePath(card.image)}
                         alt={card.name}
+                        referrerPolicy="no-referrer"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        loading="lazy"
-                        onError={(e) => {
-                          const t = e.currentTarget;
-                          if (t.src.includes('i.ibb.co/')) {
-                            const p = t.src.split('i.ibb.co/')[1];
-                            if (p) t.src = '/assets/images/' + p.replace('/', '_');
-                          }
-                        }}
+                        loading="eager"
+                        fetchPriority="high"
+                        decoding="sync"
+                        onError={handleImageError}
                       />
 
                       {/* Wishlist toggle */}

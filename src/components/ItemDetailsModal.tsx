@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { X, Phone, Calendar, Check, ShieldCheck, Heart, Tag } from 'lucide-react';
 import { WatchCard } from '../types/watch';
 import { WhatsAppIcon } from './icons/BrandIcons';
+import { handleImageError, resolveLocalImagePath } from '../utils/imageUtils';
 
 interface ItemDetailsModalProps {
   item: WatchCard | null;
@@ -100,18 +101,14 @@ export const ItemDetailsModal: React.FC<ItemDetailsModalProps> = ({
             {/* Image display */}
             <div className="relative rounded-xl overflow-hidden bg-[#f4efe6] border border-[#e2e8f0] shadow-inner group aspect-4/3 sm:aspect-square">
               <img
-                src={item.image}
+                src={resolveLocalImagePath(item.image)}
                 alt={item.name}
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="eager"
-                onError={(e) => {
-                  const t = e.currentTarget;
-                  if (t.src.includes('i.ibb.co/')) {
-                    const p = t.src.split('i.ibb.co/')[1];
-                    if (p) t.src = '/assets/images/' + p.replace('/', '_');
-                  }
-                }}
+                fetchPriority="high"
+                decoding="sync"
+                onError={handleImageError}
               />
               <div className="absolute top-3 left-3 bg-[#0c1b33]/90 text-[#fcfbfa] px-3 py-1 rounded-full text-xs font-medium tracking-wide backdrop-blur-sm border border-white/10">
                 {item.priceTag || '€14,800'}

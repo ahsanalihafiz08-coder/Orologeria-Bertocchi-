@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { X, ArrowLeft, Send, CheckCircle2, Shield, Calendar, Clock, User, Phone, Mail, FileText, AlertCircle } from 'lucide-react';
 import { WatchCard, BookingFormData } from '../types/watch';
 import { WhatsAppIcon } from './icons/BrandIcons';
+import { handleImageError, resolveLocalImagePath } from '../utils/imageUtils';
 
 interface BookingModalProps {
   item: WatchCard | null;
@@ -140,17 +141,14 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
           {/* Selected Item Banner */}
           <div className="mb-6 p-4 rounded-xl bg-[#f4efe6] border border-[#e2e8f0] flex items-center gap-4">
             <img
-              src={item.image}
+              src={resolveLocalImagePath(item.image)}
               alt={item.name}
               referrerPolicy="no-referrer"
               className="w-16 h-16 rounded-lg object-cover border border-[#cbd5e1] shrink-0"
-              onError={(e) => {
-                const t = e.currentTarget;
-                if (t.src.includes('i.ibb.co/')) {
-                  const p = t.src.split('i.ibb.co/')[1];
-                  if (p) t.src = '/assets/images/' + p.replace('/', '_');
-                }
-              }}
+              loading="eager"
+              fetchPriority="high"
+              decoding="sync"
+              onError={handleImageError}
             />
             <div className="min-w-0">
               <span className="text-[11px] font-semibold tracking-wider uppercase text-[#c5a059] block">

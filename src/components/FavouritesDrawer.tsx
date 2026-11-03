@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, Heart, Trash2, Calendar, Eye, ArrowRight } from 'lucide-react';
 import { WatchCard } from '../types/watch';
+import { handleImageError, resolveLocalImagePath } from '../utils/imageUtils';
 
 interface FavouritesDrawerProps {
   isOpen: boolean;
@@ -86,16 +87,14 @@ export const FavouritesDrawer: React.FC<FavouritesDrawerProps> = ({
                     className="p-3 rounded-xl bg-white border border-[#e2e8f0] shadow-xs flex gap-3 items-center group"
                   >
                     <img
-                      src={item.image}
+                      src={resolveLocalImagePath(item.image)}
                       alt={item.name}
+                      referrerPolicy="no-referrer"
                       className="w-16 h-16 rounded-lg object-cover border border-[#cbd5e1] shrink-0"
-                      onError={(e) => {
-                        const t = e.currentTarget;
-                        if (t.src.includes('i.ibb.co/')) {
-                          const p = t.src.split('i.ibb.co/')[1];
-                          if (p) t.src = '/assets/images/' + p.replace('/', '_');
-                        }
-                      }}
+                      loading="eager"
+                      fetchPriority="high"
+                      decoding="sync"
+                      onError={handleImageError}
                     />
                     <div className="flex-1 min-w-0">
                       <span className="text-[10px] font-semibold tracking-wider uppercase text-[#c5a059] block">
