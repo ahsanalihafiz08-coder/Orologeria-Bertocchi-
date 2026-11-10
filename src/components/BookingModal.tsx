@@ -347,7 +347,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
                   className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg bg-[#0c1b33] hover:bg-[#162a4d] text-white text-xs font-semibold uppercase tracking-wider shadow-md hover:shadow-lg transition-all"
                 >
                   <Send className="w-4 h-4 text-[#c5a059]" />
-                  <span>Submit Appointment Enquiry</span>
+                  <span>Send Inquiry</span>
                 </button>
               </div>
             </form>
@@ -385,7 +385,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-sm shadow-md transition-all"
                 >
                   <WhatsAppIcon className="w-5 h-5 text-white" />
-                  <span>Send via Official WhatsApp</span>
+                  <span>Inquire via WhatsApp</span>
                 </a>
 
                 <a

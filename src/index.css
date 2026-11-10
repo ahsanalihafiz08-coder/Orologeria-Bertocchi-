@@ -39,27 +39,28 @@
   border-color: #e2e8f0;
 }
 
-/* Keyframe animations for continuous sliding streams */
+/* Keyframe animations for continuous sliding streams (strictly fluid, linear, non-reversing) */
 @keyframes streamScrollLeft {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
 @keyframes streamScrollRight {
   0% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
   100% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 .animate-stream-left {
-  animation: streamScrollLeft 60s linear infinite;
+  animation: streamScrollLeft 65s linear infinite;
+  will-change: transform;
 }
 
 .animate-stream-left:hover {
@@ -67,7 +68,8 @@
 }
 
 .animate-stream-right {
-  animation: streamScrollRight 60s linear infinite;
+  animation: streamScrollRight 65s linear infinite;
+  will-change: transform;
 }
 
 .animate-stream-right:hover {
@@ -75,7 +77,8 @@
 }
 
 .animate-stream-continuous {
-  animation: streamScrollLeft 55s linear infinite;
+  animation: streamScrollLeft 60s linear infinite;
+  will-change: transform;
 }
 
 .animate-stream-continuous:hover {

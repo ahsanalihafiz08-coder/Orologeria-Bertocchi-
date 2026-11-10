@@ -92,7 +92,7 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
           },
         };
       } else if (q.includes('appointment') || q.includes('book') || q.includes('booking') || q.includes('visit') || q.includes('consult')) {
-        botResponse = 'You can request an appointment enquiry by selecting "Booking View" on any of our Portfolio timepieces or Service cards. You can also contact us directly by telephone or WhatsApp.';
+        botResponse = 'You can request an appointment enquiry by selecting "Inquire via WhatsApp" on any of our Portfolio timepieces or Service cards. You can also contact us directly by telephone or WhatsApp at +1 310 867 4286.';
         botAction = {
           label: 'Explore Portfolio Collection',
           onClick: () => {
@@ -128,7 +128,7 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
           },
         };
       } else if (q.includes('price') || q.includes('cost') || q.includes('how much') || q.includes('dollar') || q.includes('euro') || q.includes('usd')) {
-        botResponse = 'In accordance with luxury horological guidelines, prices are provided on enquiry based on specific configurations and availability. You can click "Booking View" or contact us via WhatsApp for precise pricing.';
+        botResponse = 'In accordance with luxury horological guidelines, prices are provided on enquiry based on specific configurations and availability. You can click "Inquire via WhatsApp" or contact us at +1 310 867 4286 for precise pricing.';
       } else if (q.includes('hours') || q.includes('open') || q.includes('time') || q.includes('when')) {
         botResponse = 'For specific daily opening hours or holiday schedules, please call us directly at +1 310 867 4286 or send a quick WhatsApp message to ensure the boutique is open for your visit.';
       } else {

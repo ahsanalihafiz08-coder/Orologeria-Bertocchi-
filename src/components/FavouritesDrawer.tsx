@@ -2,6 +2,7 @@ import React from 'react';
 import { X, Heart, Trash2, Calendar, Eye, ArrowRight } from 'lucide-react';
 import { WatchCard } from '../types/watch';
 import { handleImageError, resolveLocalImagePath } from '../utils/imageUtils';
+import { WhatsAppIcon } from './icons/BrandIcons';
 
 interface FavouritesDrawerProps {
   isOpen: boolean;
@@ -118,16 +119,15 @@ export const FavouritesDrawer: React.FC<FavouritesDrawerProps> = ({
                           <Eye className="w-3 h-3 text-[#c5a059]" />
                           Details
                         </button>
-                        <button
-                          onClick={() => {
-                            onClose();
-                            onBookAppointment(item);
-                          }}
-                          className="px-2 py-1 rounded bg-[#0c1b33] hover:bg-[#162a4d] text-white text-[10px] font-semibold flex items-center gap-1"
+                        <a
+                          href={`https://wa.me/13108674286?text=${encodeURIComponent(`Hello Rodeo Watch & Jewelry, I would like to inquire about: ${item.name} (${item.category}).`)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-2 py-1 rounded bg-[#25D366] hover:bg-[#20ba5a] text-white text-[10px] font-semibold flex items-center gap-1"
                         >
-                          <Calendar className="w-3 h-3 text-[#c5a059]" />
-                          Book
-                        </button>
+                          <WhatsAppIcon className="w-3 h-3 text-white" />
+                          <span>Inquire</span>
+                        </a>
                       </div>
                     </div>
 

@@ -210,7 +210,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Tropical Composite Strap • Embossed Dial',
         shortDetails: 'Modern sporty elegance with rounded octagonal bezel and signature black embossed checkerboard dial.',
         fullDescription: 'When launched in 1997, the Aquanaut created a sensation. It was young, modern, and unexpected with its gently rounded octagonal case inspired by the Nautilus.',
-        image: '/images/kVMTFQDH_Patek-Philippe-Aquanaut-watch-20261020014712.jpg',
+        image: '/images/Z6RmbpJR_Patek-Philippe-Aquanaut-watch-20261020014712.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Composite tropical strap resistant to UV & saltwater', 'Calibre 26-330 S C with stop-seconds', 'Screw-down crown with sapphire exhibition back'],
         specs: {
@@ -228,7 +228,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Officer-Style Hinged Dust Cover',
         shortDetails: 'The quintessential round wristwatch with invisibly hinged officer caseback and cream lacquered dial.',
         fullDescription: 'With its pure lines, the Calatrava is recognized as the very essence of the round wristwatch and one of the finest symbols of the Patek Philippe style.',
-        image: '/images/HfTmCnM9_Patek-Philippe-watch-on-surface-20261020014708.jpg',
+        image: '/images/dNmQ32Z_Patek-Philippe-watch-on-surface-20261020014708.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Officer-style caseback with invisible hinge', 'Ivory lacquered dial with gold applied indices', 'Fluted curved lugs'],
         specs: {
@@ -246,7 +246,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Porthole Construction • Blue Horizontal Ribs',
         shortDetails: 'Iconic luxury sports watch with rounded octagonal bezel, lateral hinges, and integrated bracelet.',
         fullDescription: 'With the rounded octagonal shape of its bezel, the ingenious porthole construction of its case, and its horizontally embossed dial, the Nautilus has epitomized the elegant sports watch since 1976.',
-        image: '/images/yBkC0bZP_Patek-Philippe-watch-on-surface-20261020012310.jpg',
+        image: '/images/SDmk1jSb_Patek-Philippe-watch-on-surface-20261020014717.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Satin-brushed and mirror-polished case bevels', 'Horizontal horizontally embossed dial', 'Integrated ergonomic steel bracelet'],
         specs: {
@@ -264,7 +264,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Annual Calendar • Moon Phases',
         shortDetails: 'Sublime complication showing day, date, and month in three apertures arranged along an arc.',
         fullDescription: 'The patented Annual Calendar was launched by Patek Philippe in 1996 and has been an emblematic success. Only requires one manual correction per year at the end of February.',
-        image: '/images/Tqn0VPg7_Patek-Philippe-watch-on-background-20261020012234.jpg',
+        image: '/images/wDBJF22_Patek-Philippe-watch-on-surface-20261020014735.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Three calendar apertures on upper dial', 'Moon phase disc accurate for decades', 'Pierced lugs design'],
         specs: {
@@ -300,7 +300,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: '24 Time Zones • Hand-Guilloché Dial',
         shortDetails: 'Simultaneous display of all 24 global time zones with hand-guilloché circular basketweave motif.',
         fullDescription: 'The World Time watch has been an indispensable companion for frequent travelers since the 1930s. A single pusher allows instantaneous synchronization of local time across the globe.',
-        image: '/images/PnCRX6h_Patek-Philippe-luxury-watch-view-20261020014729.jpg',
+        image: '/images/S71r82jq_Patek-Philippe-luxury-watch-view-20261020014729.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Hand-guilloché dial center', 'City disc representing 24 time zones', '22k gold mini-rotor mechanism'],
         specs: {
@@ -336,7 +336,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Divine Proportion 1 / 1.6181',
         shortDetails: 'An elliptical case derived from the golden ratio, paired with sunburst black ebony dial.',
         fullDescription: 'Launched in 1968, the Golden Ellipse was a bold departure from traditional watch shapes. Its proportions were inspired by the golden section, a proportion discovered by ancient mathematicians.',
-        image: '/images/S7WMc6mj_Patek-Philippe-watch-on-surface-20261020014737.jpg',
+        image: '/images/ZncTPwg_Patek-Philippe-watch-on-surface-20261020014737.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Case geometry based on golden ratio', 'Crown set with natural black onyx cabochon', 'Ultra-thin calibre under 2.53mm height'],
         specs: {
@@ -354,7 +354,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Dual Time Dual Day/Night Display',
         shortDetails: 'Aeronautical tribute with large luminescent Arabic numerals and dual time zone local/home indicators.',
         fullDescription: 'Paying homage to Patek Philippe traditional aviators watches from the 1930s, this white gold timepiece combines masculine presence with unparalleled travel utility.',
-        image: '/images/Jj06TfNf_Pilot-watch-on-white-surface-20261020012222.jpg',
+        image: '/images/1fvPdTbq_Patek-Philippe-watch-on-surface-20261020014741.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Patented safety screw-lock pushers', 'Local and home day/night apertures', 'Vintage brown calfskin strap with clevis prong buckle'],
         specs: {
@@ -372,7 +372,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Diamond Bezel • Silvery Dial',
         shortDetails: 'Pure feminine horological refinement set with 160 brilliant-cut diamonds in dentelle setting.',
         fullDescription: 'Created for the modern, dynamic woman, the Twenty~4 Automatic expresses timeless beauty and poise from morning to evening, complemented by an articulated bracelet that feels like silk.',
-        image: '/images/nNjNM3RW_Patek-Philippe-watch-on-background-20261020014821.jpg',
+        image: '/images/5XKbN300_Patek-Philippe-watch-on-background-20261020014821.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['160 flawless brilliant diamonds (~0.77 ct)', 'Silvery sunburst vertical and horizontal shantung satin dial', 'Patek Philippe seal execution'],
         specs: {
@@ -452,7 +452,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Florentine Micro-Hammering Technique',
         shortDetails: 'Shimmering diamond-dust finish achieved through ancient Florentine jewellery micro-indentation.',
         fullDescription: 'Created in collaboration with jewellery designer Carolina Bucci, the Frosted Gold surface catches light like precious diamond dust without setting stones.',
-        image: '/images/nqq6gFSD_Audemars-Piguet-Royal-Oak-watch-20261020015136.jpg',
+        image: '/images/LXjx3MvF_Audemars-Piguet-Royal-Oak-watch-20261020015136.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Florentine hammered frosted finish', 'Translucent sapphire exhibition caseback', 'Grand Tapisserie matching tone dial'],
         specs: {
@@ -470,7 +470,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Openworked Skeleton Architecture',
         shortDetails: 'Mesmerizing skeletonized movement displaying twin balance wheels oscillating on the same axis.',
         fullDescription: 'By fixing two balance wheels and two hairsprings on the same axis, the system oscillates in perfect synchrony, significantly stabilizing rate precision.',
-        image: '/images/vC2DFZd1_Audemars-Piguet-watch-on-background-20261020015157.jpg',
+        image: '/images/Myhg1QD0_Audemars-Piguet-watch-on-background-20261020015157.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Patented double balance wheel geometry', 'Hand-beveled and polished openworked bridges', 'Anthracite galvanic openwork aesthetic'],
         specs: {
@@ -488,7 +488,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Octagonal Middle Case • Double Curved Crystal',
         shortDetails: 'Architectural case featuring an octagonal middle nestled within a round bezel, with smoked lacquer dial.',
         fullDescription: 'Code 11.59 represents the conscious evolution of classic watch design, featuring a double curved glareproof sapphire crystal creating fascinating optical depth.',
-        image: '/images/KjSChBfg_Audemars-Piguet-chronograph-on-s-20261020015201.jpg',
+        image: '/images/ynV1DKf3_Audemars-Piguet-chronograph-on-s-20261020015201.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Complex multi-tier curved sapphire crystal', 'Octagonal core inside round external architecture', 'Smoked sunburst lacquered dial'],
         specs: {
@@ -506,7 +506,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Brilliant Diamond Bezel • Grey Tapisserie',
         shortDetails: 'Harmonious mid-size proportion adorned with 40 brilliant-cut diamonds and iconic bracelet.',
         fullDescription: 'Balancing sporty strength with refined elegance, this 37 mm Royal Oak showcases brilliant diamonds framing a delicate Grande Tapisserie dial.',
-        image: '/images/yn0KZcC3_Audemars-Piguet-Royal-Oak-watch-20261020015204.jpg',
+        image: '/images/MxX3TJwF_Audemars-Piguet-Royal-Oak-watch-20261020015204.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['40 brilliant-cut diamonds (~0.92 carats)', 'Ergonomic tapered integrated bracelet', 'Calibre 5900 with 60-hour reserve'],
         specs: {
@@ -560,7 +560,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Futuristic Micro-Mechanics Architecture',
         shortDetails: 'Sculpted futuristic titanium case featuring flying tourbillon cage at 6 oclock and crown position indicator.',
         fullDescription: 'Born in 2002 to celebrate the 30th anniversary of the Royal Oak, the Concept platform serves as an open laboratory for avant-garde materials and revolutionary horology.',
-        image: '/images/BV6GGBk6_Watch-resting-on-textured-surface-20261020015119.jpg',
+        image: '/images/DP3fJ1MP_Audemars-Piguet-Royal-Oak-watch-20261020015214.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Flying tourbillon with no upper bridge', 'Angular faceted futuristic case sculpting', '10-day power reserve with twin barrels'],
         specs: {
@@ -774,7 +774,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Integrated 5-Link Bracelet • Notched Bezel',
         shortDetails: 'Sport-chic watch with notched bezel in alternating cut grooves and polished finish.',
         fullDescription: 'The Tudor Royal range offers a versatile and sophisticated sport-chic aesthetic with its characteristic notched bezel and integrated metal bracelet.',
-        image: '/images/G4zG2SNH_Tudor-Royal-watch-displayed-20261020015814.jpg',
+        image: '/images/0yH5zrFG_Stainless-steel-watch-resting-20261020014008.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Notched 316L steel bezel', 'Integrated five-link bracelet', 'Day and date display at 12 and 3 oclock'],
         specs: {
@@ -792,7 +792,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Grade 2 Titanium • Auto-Adjusting Spring Clasp',
         shortDetails: 'The definitive mechanical dive watch engineered from lightweight titanium with helium escape valve.',
         fullDescription: 'The ultimate tool watch, the Pelagos is one of the most complete traditional mechanical divers watches available, waterproof to 500 metres.',
-        image: '/images/Q3dcSyBb_Tudor-Pelagos-dive-watch-display-20261020015811.jpg',
+        image: '/images/k6W6CsCw_Cartier-stainless-steel-watch-di-20261020015449.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Patented auto-adjusting spring dive clasp', 'Ceramic matte rotating bezel with full luminescent markers', 'Manufacture Calibre MT5612 (COSC)'],
         specs: {
@@ -864,7 +864,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Fixed 24-Hour Bezel • Yellow GMT Hand',
         shortDetails: 'Compact dual-timezone adventurer watch equipped with yellow 24-hour snowflake hand.',
         fullDescription: 'The Black Bay Pro is an entirely new model with dual time zone feature, a technical complication that establishes local time without losing sight of the time at home.',
-        image: '/images/sdF2HPyc_Tudor-watch-resting-on-surface-20261020012251.jpg',
+        image: '/images/hJ1PxJzS_Cartier-steel-watch-product-view-20261020015507.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Ceramic monobloc luminous hour markers', 'Fixed 24-hour satin-brushed steel bezel', 'Manufacture Calibre MT5652 GMT (COSC)'],
         specs: {
@@ -998,7 +998,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Horizontal Teak Concept Dial',
         shortDetails: 'Tribute to yachting luxury with teak wood deck pattern dial and anti-magnetic resistance.',
         fullDescription: 'The Seamaster Aqua Terra is a superb tribute to OMEGAs rich maritime heritage. In this 41mm model, the symmetrical case is crafted from stainless steel with horizontal teak pattern dial.',
-        image: '/images/dsWHJhC4_Omega-Aqua-Terra-on-surface-20261020020139.jpg',
+        image: '/images/0ycvgSrc_Rolex-Daytona-chronograph-on-sur-20261020014026.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Horizontal teak wood yacht deck dial pattern', 'Resistant to magnetic fields up to 15,000 gauss', 'Screw-down crown with wave-edged caseback'],
         specs: {
@@ -1016,7 +1016,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Alternating Minute Track • Tachymeter Bezel',
         shortDetails: 'Motorsport chronograph recalling the dashboard clocks of historic European racing cars.',
         fullDescription: 'Before the Speedmaster landed on the moon, it was designed for endurance sports car drivers. The Racing model salutes that motor heritage with alternating chequered track markings.',
-        image: '/images/tp5XSBfX_Omega-Speedmaster-resting-on-bac-20261020020143.jpg',
+        image: '/images/5Wspq1yL_Rolex-GMT-Master-II-watch-resting-20261020014035.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Racing alternating minute chapter ring', 'Column-wheel mechanism with silicon balance spring', 'Bevelled sub-registers with concentric azurage'],
         specs: {
@@ -1034,7 +1034,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Ceramic Liquidmetal Bezel • Orange Rubber Inlay',
         shortDetails: 'Professional deep diving instrument waterproof to 600 metres with helium escape valve.',
         fullDescription: 'It was with OMEGAs maritime legacy in mind that the brand launched its Planet Ocean line in 2005. Today, the stylish watch continues to pay homage to OMEGAs dive watch heritage.',
-        image: '/images/bjz1Fm21_Omega-Seamaster-dive-watch-view-20261020020154.jpg',
+        image: '/images/bMLSwX46_Rolex-Sea-Dweller-watch-displayed-20261020014101.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Ceramic bezel with orange vulcanized rubber 15-minute scale', 'Alveol screw-down caseback with seahorse medallion', '600m depth capability'],
         specs: {
@@ -1052,7 +1052,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Pie-Pan Dial • Fluted Hard-Metal Bezel',
         shortDetails: 'The worlds first Master Chronometer with iconic faceted 1952 pie-pan dial and tungsten carbide bezel.',
         fullDescription: 'The Globemaster is already a legendary name in the OMEGA family. It has been updated to become the worlds first Master Chronometer, setting new standards of precision.',
-        image: '/images/tpWwPzLD_Omega-Constellation-watch-on-sur-20261020020158.jpg',
+        image: '/images/Q3NM3YXD_Rolex-Yacht-Master-on-surface-20261020014105.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Faceted vintage pie-pan dial architecture', 'Scratchproof tungsten carbide fluted bezel', 'Observatory medallion set into sapphire back'],
         specs: {
@@ -1088,7 +1088,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Monobloc Black Zirconium Ceramic',
         shortDetails: 'Machined from a single block of black ceramic, commemorating Apollo 8 astronauts.',
         fullDescription: 'The Speedmaster Dark Side of the Moon is a product of ground-breaking technology. It is crafted from a single block of black zirconium oxide ceramic, representing the mysteries of lunar space.',
-        image: '/images/C5LWBGvR_Omega-Speedmaster-on-background-20261020020210.jpg',
+        image: '/images/9m1WzhYJ_Rolex-Oyster-Perpetual-turquoise-20261020014039.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Monobloc black ceramic case, bezel, and pushers', 'Titanium folding clasp on coated nylon fabric strap', 'Laser-engraved tachymeter in Chromium nitride'],
         specs: {

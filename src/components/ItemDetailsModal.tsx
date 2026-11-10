@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, Phone, Calendar, Check, ShieldCheck, Heart, Tag } from 'lucide-react';
+import { X, Phone, Calendar, Check, ShieldCheck, Heart, Tag, Send } from 'lucide-react';
 import { WatchCard } from '../types/watch';
 import { WhatsAppIcon } from './icons/BrandIcons';
 import { handleImageError, resolveLocalImagePath } from '../utils/imageUtils';
@@ -226,20 +226,19 @@ export const ItemDetailsModal: React.FC<ItemDetailsModalProps> = ({
               className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-4 py-2.5 rounded-lg bg-[#25D366] hover:bg-[#20ba5a] text-white text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-colors shadow-xs text-center"
             >
               <WhatsAppIcon className="w-3.5 h-3.5 text-white shrink-0" />
-              <span className="truncate">WhatsApp Chat</span>
+              <span className="truncate">Inquire via WhatsApp</span>
             </a>
 
-            {/* 3. Book an Appointment / Booking View Button */}
-            <button
-              onClick={() => {
-                onClose();
-                onBookAppointment(item);
-              }}
-              className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-5 py-2.5 rounded-lg bg-[#0c1b33] hover:bg-[#162a4d] text-white text-[11px] sm:text-xs font-semibold uppercase tracking-wider shadow-md hover:shadow-lg transition-all cursor-pointer text-center"
+            {/* 3. Send Inquiry Direct Button */}
+            <a
+              href={whatsAppUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-5 py-2.5 rounded-lg bg-[#0c1b33] hover:bg-[#162a4d] text-white text-[11px] sm:text-xs font-semibold uppercase tracking-wider shadow-md hover:shadow-lg transition-all text-center"
             >
-              <Calendar className="w-3.5 h-3.5 text-[#c5a059] shrink-0" />
-              <span className="truncate">Booking View</span>
-            </button>
+              <Send className="w-3.5 h-3.5 text-[#c5a059] shrink-0" />
+              <span className="truncate">Send Inquiry</span>
+            </a>
           </div>
         </div>
       </div>

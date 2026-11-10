@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Clock, Navigation, Mail } from 'lucide-react';
+import { MapPin, Phone, Clock, Navigation, Mail, ExternalLink } from 'lucide-react';
 import { WhatsAppIcon, InstagramIcon } from '../icons/BrandIcons';
 
 interface ContactSectionProps {
@@ -167,6 +167,19 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           {/* Right Column: Google Maps Embed */}
           <div className="flex flex-col h-full min-h-[460px] lg:min-h-full">
             <div className="rounded-2xl overflow-hidden border border-[#e2e8f0] shadow-xs bg-[#f4efe6] relative flex-1 h-full min-h-[420px] lg:min-h-full">
+              {/* Top-Right Interactive Direct Map Action Button */}
+              <a
+                href={directionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-4 right-4 z-20 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#0c1b33]/95 hover:bg-[#0c1b33] text-white text-xs font-bold uppercase tracking-wider shadow-lg border border-white/20 backdrop-blur-md transition-all hover:scale-105 group cursor-pointer"
+                title="Open location directly in Google Maps"
+              >
+                <Navigation className="w-3.5 h-3.5 text-[#c5a059] group-hover:scale-110 transition-transform" />
+                <span>Open in Google Maps</span>
+                <ExternalLink className="w-3.5 h-3.5 text-slate-300" />
+              </a>
+
               <iframe
                 title="Google Maps Location of Rodeo Watch & Jewelry in Los Angeles, California"
                 src={mapsEmbedSrc}
@@ -179,19 +192,20 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 className="w-full h-full"
               />
 
-              {/* Floating map action banner */}
-              <div className="absolute bottom-4 left-4 right-4 sm:left-auto sm:right-4 bg-[#0c1b33]/90 backdrop-blur-md text-white p-3.5 rounded-xl border border-white/20 shadow-lg flex items-center justify-between gap-4">
-                <div className="text-left">
-                  <div className="text-xs font-bold text-white">550 S Hill St Ste 1238</div>
-                  <div className="text-[11px] text-[#dfc181]">Los Angeles, CA 90013, United States</div>
+              {/* Floating map action banner with direct interactive button */}
+              <div className="absolute bottom-4 left-4 right-4 sm:left-auto sm:right-4 bg-[#0c1b33]/90 backdrop-blur-md text-white p-3.5 rounded-xl border border-white/20 shadow-lg flex items-center justify-between gap-4 z-10">
+                <div className="text-left min-w-0">
+                  <div className="text-xs font-bold text-white truncate">550 S Hill St Ste 1238</div>
+                  <div className="text-[11px] text-[#dfc181] truncate">Los Angeles, CA 90013, United States</div>
                 </div>
                 <a
                   href={directionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3.5 py-1.5 rounded-lg bg-[#c5a059] hover:bg-[#b38728] text-[#0c1b33] font-bold text-xs uppercase tracking-wider transition-colors shrink-0"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#c5a059] hover:bg-[#dfc181] text-[#0c1b33] font-bold text-xs uppercase tracking-wider transition-all shadow-md shrink-0 cursor-pointer"
                 >
-                  Directions
+                  <Navigation className="w-3.5 h-3.5" />
+                  <span>Open Map Location</span>
                 </a>
               </div>
             </div>

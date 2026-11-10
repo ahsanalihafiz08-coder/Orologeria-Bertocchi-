@@ -3,6 +3,7 @@ import { Heart, Eye, Calendar, Tag, Filter, ShoppingBag } from 'lucide-react';
 import { WatchCard } from '../../types/watch';
 import { SERVICES_CATEGORIES } from '../../data/servicesData';
 import { handleImageError, resolveLocalImagePath } from '../../utils/imageUtils';
+import { WhatsAppIcon } from '../icons/BrandIcons';
 
 interface ServicesSectionProps {
   cards: WatchCard[];
@@ -176,13 +177,16 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                         <span className="truncate">View Details</span>
                       </button>
 
-                      <button
-                        onClick={() => onBookingView(card)}
-                        className="inline-flex items-center justify-center gap-1.5 py-2 px-1.5 sm:px-2.5 rounded-lg bg-[#0c1b33] hover:bg-[#162a4d] text-white text-[11px] sm:text-xs font-semibold uppercase tracking-wide transition-colors shadow-xs cursor-pointer whitespace-nowrap"
+                      <a
+                        href={`https://wa.me/13108674286?text=${encodeURIComponent(`Hello Rodeo Watch & Jewelry, I would like to inquire about: ${card.name} (${card.category}).`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center justify-center gap-1.5 py-2 px-1.5 sm:px-2.5 rounded-lg bg-[#25D366] hover:bg-[#20ba5a] text-white text-[11px] sm:text-xs font-semibold uppercase tracking-wide transition-colors shadow-xs whitespace-nowrap"
                       >
-                        <Calendar className="w-3.5 h-3.5 text-[#c5a059] shrink-0" />
-                        <span className="truncate">Booking View</span>
-                      </button>
+                        <WhatsAppIcon className="w-3.5 h-3.5 text-white shrink-0" />
+                        <span className="truncate">Inquire via WhatsApp</span>
+                      </a>
                     </div>
                   </div>
                 </div>

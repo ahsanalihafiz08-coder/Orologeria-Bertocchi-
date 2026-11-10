@@ -54,20 +54,20 @@ export const Header: React.FC<HeaderProps> = ({
             : 'bg-transparent border-none shadow-none py-2.5 sm:py-3.5'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-11 sm:h-12 gap-2">
-            {/* Left side: Business Name */}
-            <div className="flex items-center min-w-0 shrink">
+            {/* Left side: Business Name Logo (exclusively left-aligned on mobile) */}
+            <div className="flex items-center justify-start text-left min-w-0 shrink mr-auto sm:mr-0">
               <a
                 href="#hero"
                 onClick={(e) => {
                   e.preventDefault();
                   handleNavClick('hero');
                 }}
-                className="group flex items-center select-none min-w-0"
+                className="group flex items-center justify-start text-left select-none min-w-0"
               >
                 <span
-                  className={`font-serif text-[15px] sm:text-base md:text-lg lg:text-[19px] font-bold tracking-wide uppercase transition-colors whitespace-nowrap ${
+                  className={`font-serif text-[14px] xs:text-[15px] sm:text-base md:text-lg lg:text-[19px] font-bold tracking-wide uppercase transition-colors whitespace-nowrap text-left block ${
                     isScrolled ? 'text-[#0c1b33]' : 'text-white drop-shadow-md'
                   }`}
                 >

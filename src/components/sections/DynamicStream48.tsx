@@ -108,7 +108,7 @@ export const DynamicStream48: React.FC<DynamicStream48Props> = ({
 
       {/* 2 Rows: 24 Cards on Top (glides right) and 24 Cards on Bottom (glides left) */}
       <div className="space-y-6 sm:space-y-8">
-        {/* Row 1: Top 24 Cards - Continuous Glide Towards RIGHT */}
+        {/* Row 1: Top 24 Cards - Continuous Fluid Glide Towards RIGHT */}
         <div className="relative w-full overflow-hidden">
           <div
             className="flex gap-6 animate-stream-right"
@@ -120,7 +120,7 @@ export const DynamicStream48: React.FC<DynamicStream48Props> = ({
           </div>
         </div>
 
-        {/* Row 2: Bottom 24 Cards - Continuous Glide Towards LEFT */}
+        {/* Row 2: Bottom 24 Cards - Continuous Fluid Glide Towards LEFT */}
         <div className="relative w-full overflow-hidden">
           <div
             className="flex gap-6 animate-stream-left"
