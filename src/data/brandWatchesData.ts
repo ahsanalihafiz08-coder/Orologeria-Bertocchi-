@@ -1338,7 +1338,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Railway Track • Stepped Casing • Hallmark of Geneva',
         shortDetails: 'Masterpiece of Geneva watchmaking with day, date, month, and precision astronomical moonphase.',
         fullDescription: 'The Traditionnelle collection expresses the rigorous traditions of Genevan haute horlogerie passed down since 1755, certified with the prestigious Hallmark of Geneva.',
-        image: '/images/G3TSPZG8_Vacheron-Constantin-Traditionnel-20261020021004.jpg',
+        image: '/images/6hF6NtC_Watch-on-textured-surface-20261020015454.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Hallmark of Geneva certified execution', 'Precision moonphase disc accurate to 122 years', 'Stepped case with circular satin-brushed caseback'],
         specs: {
@@ -1428,7 +1428,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Column-Wheel Chronograph • Reverse Panda Dial',
         shortDetails: 'High-complication sports chronograph with contrasting silver sub-dials and integrated architecture.',
         fullDescription: 'Equipped with a column-wheel chronograph movement certified with the Hallmark of Geneva, this Overseas timepiece captures dynamic movement and elegance in every detail.',
-        image: '/images/yn30vc5q_Vacheron-Constantin-watch-on-sur-20261020021028.jpg',
+        image: '/images/CKPNzJNQ_Watch-resting-on-textured-surface-20261020015119.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Column-wheel chronograph mechanism with vertical clutch', 'Maltese cross crown and pushers', 'Quick-release interchangeable steel and rubber bands'],
         specs: {
@@ -1464,7 +1464,7 @@ export const BRAND_WATCHES_DATA: Record<string, BrandInfo> = {
         subtitle: 'Maltese Cross Tourbillon Carriage',
         shortDetails: 'Supreme horological grandeur featuring an open tourbillon cage shaped as the Maltese cross emblem.',
         fullDescription: 'The open cage at 6 oclock rotates once every minute, shaped in the form of the brands historic Maltese cross emblem. Finished with meticulous interior anglage.',
-        image: '/images/xpkkt2w_Vacheron-Constantin-luxury-dress-20261020021034.jpg',
+        image: '/images/y3zhd7r_Gold-watch-on-surface-20261020015502.jpg',
         priceTag: 'Price on enquiry',
         highlights: ['Hand-chamfered Maltese cross tourbillon carriage', 'Peripheral oscillating weight providing clear view', 'Hallmark of Geneva certification'],
         specs: {

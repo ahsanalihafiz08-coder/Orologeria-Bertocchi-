@@ -49,7 +49,7 @@ export const AboutModal: React.FC<AboutModalProps> = ({
               Boutique Heritage & Vision
             </span>
             <h2 id="about-modal-title" className="font-serif text-xl font-bold text-[#0c1b33]">
-              Intemporel_geneve
+              Rodeo Watch & Jewelry
             </h2>
           </div>
           <button
@@ -77,10 +77,10 @@ export const AboutModal: React.FC<AboutModalProps> = ({
 
           <div>
             <h3 className="font-serif text-lg font-semibold text-[#0c1b33] mb-2">
-              The Essence of Fine Horology in Geneva
+              The Essence of Fine Horology & Jewelry in Los Angeles
             </h3>
             <p>
-              Located at Route des Jeunes 4bis in Geneva, Switzerland, Intemporel_geneve is dedicated to celebrating the culture and artistic distinction of fine timepieces. A watch is far more than an instrument to measure passing hours; it is a wearable sculpture, a statement of personal character, and a testament to European mechanical heritage.
+              Located at 550 S Hill St Ste 1238, Los Angeles, CA 90013, United States, Rodeo Watch & Jewelry is dedicated to celebrating the culture and artistic distinction of fine timepieces and fine jewelry. A watch is far more than an instrument to measure passing hours; it is a wearable sculpture, a statement of personal character, and a testament to horological excellence.
             </p>
           </div>
 
@@ -102,10 +102,10 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                 <Award className="w-4 h-4 text-[#c5a059]" />
               </div>
               <h4 className="font-serif font-semibold text-[#0c1b33] text-base mb-1">
-                Swiss Excellence & Atmosphere
+                Horological & Jewelry Excellence
               </h4>
               <p className="text-xs text-[#475569]">
-                Steeped in Geneva horological refinement, our welcoming boutique environment invites lovers of watches to explore styles at an unhurried, thoughtful pace.
+                Steeped in horological refinement and jewelry craftsmanship, our welcoming boutique environment in Los Angeles invites collectors to explore styles at an unhurried, thoughtful pace.
               </p>
             </div>
           </div>
@@ -113,11 +113,11 @@ export const AboutModal: React.FC<AboutModalProps> = ({
           <div className="p-4 rounded-xl bg-white border border-[#e2e8f0] space-y-2 text-xs">
             <div className="flex items-center gap-2 text-[#0c1b33] font-semibold">
               <MapPin className="w-4 h-4 text-[#c5a059]" />
-              <span>Route des Jeunes 4bis, Geneva, Switzerland, 1227</span>
+              <span>550 S Hill St Ste 1238, Los Angeles, CA 90013, United States</span>
             </div>
             <div className="flex items-center gap-2 text-[#0c1b33] font-semibold">
               <Phone className="w-4 h-4 text-[#c5a059]" />
-              <span>+41 79 966 01 56</span>
+              <span>+1 310 867 4286</span>
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ export const AboutModal: React.FC<AboutModalProps> = ({
         {/* Footer */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 px-6 py-4 border-t border-[#e2e8f0] bg-[#f8f5ee]">
           <a
-            href="https://wa.me/41799660156"
+            href="https://wa.me/13108674286"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-xs font-semibold text-[#128C7E] hover:underline"

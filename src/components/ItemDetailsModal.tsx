@@ -38,9 +38,9 @@ export const ItemDetailsModal: React.FC<ItemDetailsModalProps> = ({
   if (!item) return null;
 
   const prefilledWhatsAppText = encodeURIComponent(
-    `Bonjour Intemporel_geneve, je souhaite recevoir des informations et détails sur: ${item.name} (${item.category}).`
+    `Hello Rodeo Watch & Jewelry, I would like to receive information and details about: ${item.name} (${item.category}).`
   );
-  const whatsAppUrl = `https://wa.me/41799660156?text=${prefilledWhatsAppText}`;
+  const whatsAppUrl = `https://wa.me/13108674286?text=${prefilledWhatsAppText}`;
 
   return (
     <div
@@ -61,7 +61,7 @@ export const ItemDetailsModal: React.FC<ItemDetailsModalProps> = ({
               {item.category}
             </span>
             <span className="text-xs text-[#475569] font-medium hidden sm:inline">
-              Intemporel_geneve • Geneva
+              Rodeo Watch & Jewelry • Los Angeles
             </span>
           </div>
           
@@ -200,7 +200,7 @@ export const ItemDetailsModal: React.FC<ItemDetailsModalProps> = ({
                 Technical Consultation & Inquiries
               </h4>
               <p className="text-xs text-[#475569]">
-                Consult our Geneva boutique directly at <strong>+41 79 966 01 56</strong> for comprehensive technical documentation, wrist proportions, and availability.
+                Consult our Los Angeles boutique directly at <strong>+1 310 867 4286</strong> for comprehensive technical documentation, wrist proportions, and availability.
               </p>
             </div>
           )}
@@ -211,7 +211,7 @@ export const ItemDetailsModal: React.FC<ItemDetailsModalProps> = ({
           <div className="grid grid-cols-3 gap-2 sm:gap-3 w-full">
             {/* 1. Single Clean Phone Contact Button */}
             <a
-              href="tel:+41799660156"
+              href="tel:+13108674286"
               className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-4 py-2.5 rounded-lg border border-[#e2e8f0] bg-white hover:bg-[#f4efe6] text-[#0c1b33] text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all shadow-2xs hover:border-[#c5a059] text-center"
             >
               <Phone className="w-3.5 h-3.5 text-[#c5a059] shrink-0" />

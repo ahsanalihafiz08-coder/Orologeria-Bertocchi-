@@ -163,7 +163,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                         <span>{card.priceTag || '€14,800'}</span>
                       </div>
                       <span className="text-[10px] uppercase font-semibold text-[#94a3b8]">
-                        Intemporel Curation
+                        Rodeo Curation
                       </span>
                     </div>
 

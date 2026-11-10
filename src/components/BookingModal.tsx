@@ -88,18 +88,18 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
 
   // Compose the WhatsApp message with user details
   const composedWhatsAppMessage = encodeURIComponent(
-    `*Demande de Rendez-vous - Intemporel_geneve*\n\n` +
-      `*Objet / Modèle:* ${formData.selectedItemName} (${formData.category})\n` +
-      `*Nom Client:* ${formData.fullName}\n` +
-      `*Téléphone:* ${formData.phone}\n` +
+    `*Appointment Enquiry - Rodeo Watch & Jewelry*\n\n` +
+      `*Item / Model:* ${formData.selectedItemName} (${formData.category})\n` +
+      `*Client Name:* ${formData.fullName}\n` +
+      `*Phone:* ${formData.phone}\n` +
       `*Email:* ${formData.email}\n` +
-      `*Date Souhaitée:* ${formData.preferredDate}\n` +
-      `*Heure Souhaitée:* ${formData.preferredTime}\n` +
-      (formData.message ? `*Message:* ${formData.message}\n` : '') +
-      `\nDemande de rendez-vous auprès de la boutique Intemporel_geneve (Route des Jeunes 4bis, Genève).`
+      `*Preferred Date:* ${formData.preferredDate}\n` +
+      `*Preferred Time:* ${formData.preferredTime}\n` +
+      (formData.message ? `*Notes:* ${formData.message}\n` : '') +
+      `\nBoutique Appointment Enquiry for Rodeo Watch & Jewelry (550 S Hill St Ste 1238, Los Angeles, CA 90013).`
   );
 
-  const whatsAppDirectUrl = `https://wa.me/41799660156?text=${composedWhatsAppMessage}`;
+  const whatsAppDirectUrl = `https://wa.me/13108674286?text=${composedWhatsAppMessage}`;
 
   return (
     <div
@@ -158,7 +158,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
                 {item.name}
               </h3>
               <p className="text-xs text-[#475569] mt-0.5">
-                Location: Intemporel_geneve — Route des Jeunes 4bis, Geneva, Switzerland, 1227
+                Location: Rodeo Watch & Jewelry — 550 S Hill St Ste 1238, Los Angeles, CA 90013, United States
               </p>
             </div>
           </div>
@@ -389,7 +389,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ item, onClose }) => 
                 </a>
 
                 <a
-                  href="tel:+41799660156"
+                  href="tel:+13108674286"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#0c1b33] hover:bg-[#162a4d] text-white font-semibold text-sm transition-all"
                 >
                   <Phone className="w-4 h-4 text-[#c5a059]" />

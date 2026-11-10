@@ -1,6 +1,6 @@
 import React from 'react';
-import { MapPin, Phone, ExternalLink, Clock, ShieldCheck, Navigation, Mail } from 'lucide-react';
-import { WhatsAppIcon, FacebookIcon, InstagramIcon } from '../icons/BrandIcons';
+import { MapPin, Phone, Clock, Navigation, Mail } from 'lucide-react';
+import { WhatsAppIcon, InstagramIcon } from '../icons/BrandIcons';
 
 interface ContactSectionProps {
   onNavigateSection: (sectionId: string) => void;
@@ -9,23 +9,24 @@ interface ContactSectionProps {
 
 export const ContactSection: React.FC<ContactSectionProps> = ({
   onNavigateSection,
-  onOpenBooking,
+  onOpenBooking: _onOpenBooking,
 }) => {
   const directionsUrl =
-    'https://www.google.com/maps/search/?api=1&query=Route%20des%20Jeunes%204bis%2C%20Geneva%2C%20Switzerland%2C%201227';
+    'https://www.google.com/maps/search/?api=1&query=550%20S%20Hill%20St%20Ste%201238%2C%20Los%20Angeles%2C%20CA%2090013%2C%20United%20States';
 
   const mapsEmbedSrc =
-    'https://maps.google.com/maps?q=Route%20des%20Jeunes%204bis,%20Geneva,%20Switzerland,%201227&t=&z=16&ie=UTF8&iwloc=&output=embed';
+    'https://maps.google.com/maps?q=550%20S%20Hill%20St%20Ste%201238,%20Los%20Angeles,%20CA%2090013,%20United%20States&t=&z=16&ie=UTF8&iwloc=&output=embed';
 
   const currentYear = 2026;
 
   const instagramProfileUrl =
-    'https://www.instagram.com/intemporel_geneve?rpxt=anQ3c2VhM2ZnYmJ0';
-  const facebookUrl =
-    'https://www.facebook.com/Intemporel.Geneve';
+    'https://www.instagram.com/rodeowatches?obrf=MW1kNDd0bGZwc3Z0Zg==';
   const whatsAppUrl =
-    'https://wa.me/41799660156?text=Bonjour%20Intemporel_geneve,%20je%20souhaite%20des%20informations.';
-  const emailAddress = 'contact@intemporel-geneve.ch';
+    'https://wa.me/13108674286?text=Hello%20Rodeo%20Watch%20%26%20Jewelry,%20I%20would%20like%20information%20regarding%20your%20timepieces.';
+  const emailAddress = 'rodeowatches@gmail.com';
+  const phoneNumber = '+1 310 867 4286';
+  const phoneCallHref = 'tel:+13108674286';
+  const businessAddress = '550 S Hill St Ste 1238, Los Angeles, CA 90013, United States';
 
   return (
     <section
@@ -37,18 +38,18 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         {/* Section Title */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f4efe6] border border-[#e2e8f0] text-xs font-semibold tracking-widest text-[#9e7a35] uppercase">
-            <span>Visit Our Geneva Boutique</span>
+            <span>Visit Our Los Angeles Showroom</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0c1b33]">
             Contact & Boutique Location
           </h2>
           <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-            We look forward to welcoming you to Intemporel_geneve. Reach out to coordinate your visit or consult on our exclusive timepieces.
+            We look forward to welcoming you to Rodeo Watch & Jewelry. Reach out to coordinate your private visit or consult on our exclusive fine timepieces and jewelry.
           </p>
           <div className="w-16 h-0.5 bg-[#c5a059] mx-auto mt-4" />
         </div>
 
-        {/* Contact Info Grid: Balanced 50/50 columns with even left and right alignment */}
+        {/* Contact Info Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch mb-16">
           {/* Left Column: Contact Cards */}
           <div className="flex flex-col justify-between space-y-5 sm:space-y-6">
@@ -63,14 +64,14 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     Boutique Address
                   </h3>
                   <span className="text-xs text-[#9e7a35] font-semibold uppercase tracking-wider">
-                    Geneva, Switzerland
+                    Los Angeles, California
                   </span>
                 </div>
               </div>
 
               <p className="text-sm text-[#0c1b33] font-medium leading-relaxed pl-13">
-                Route des Jeunes 4bis<br />
-                Geneva, Switzerland, 1227
+                550 S Hill St Ste 1238<br />
+                Los Angeles, CA 90013, United States
               </p>
 
               <div className="pl-13 pt-1">
@@ -97,7 +98,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     Direct Telephone & Email
                   </h3>
                   <span className="text-xs text-[#9e7a35] font-semibold uppercase tracking-wider">
-                    Immediate Inquiries
+                    Immediate Inquiries & WhatsApp
                   </span>
                 </div>
               </div>
@@ -105,10 +106,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               <div className="pl-13 space-y-3">
                 <div className="space-y-1">
                   <a
-                    href="tel:+41799660156"
+                    href={phoneCallHref}
                     className="font-serif text-xl sm:text-2xl font-bold text-[#0c1b33] hover:text-[#c5a059] transition-colors block"
                   >
-                    +41 79 966 01 56
+                    {phoneNumber}
                   </a>
                   <a
                     href={`mailto:${emailAddress}`}
@@ -118,22 +119,22 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     <span>{emailAddress}</span>
                   </a>
                   <p className="text-xs text-[#475569] mt-0.5">
-                    Click to call or email directly from your smartphone or device.
+                    Click to call, text, or email directly from your device.
                   </p>
                 </div>
 
-                {/* 3 Equal-Sized Communication Buttons: WhatsApp, Instagram, Facebook */}
+                {/* Communication Buttons */}
                 <div className="pt-2">
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 w-full">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full">
                     {/* 1. WhatsApp Button */}
                     <a
                       href={whatsAppUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-2 sm:px-3 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs uppercase tracking-wider shadow-xs hover:shadow-md transition-all text-center"
+                      className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs uppercase tracking-wider shadow-xs hover:shadow-md transition-all text-center"
                     >
                       <WhatsAppIcon className="w-4 h-4 text-white shrink-0" />
-                      <span>WhatsApp</span>
+                      <span>WhatsApp (+1 310 867 4286)</span>
                     </a>
 
                     {/* 2. Instagram Button */}
@@ -141,21 +142,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                       href={instagramProfileUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-2 sm:px-3 rounded-xl bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] hover:opacity-95 text-white font-semibold text-xs uppercase tracking-wider shadow-xs hover:shadow-md transition-all text-center"
+                      className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] hover:opacity-95 text-white font-semibold text-xs uppercase tracking-wider shadow-xs hover:shadow-md transition-all text-center"
                     >
                       <InstagramIcon className="w-4 h-4 text-white shrink-0" />
-                      <span>Instagram</span>
-                    </a>
-
-                    {/* 3. Facebook Button */}
-                    <a
-                      href={facebookUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-2 sm:px-3 rounded-xl bg-[#1877F2] hover:bg-[#166fe5] text-white font-semibold text-xs uppercase tracking-wider shadow-xs hover:shadow-md transition-all text-center"
-                    >
-                      <FacebookIcon className="w-4 h-4 text-white shrink-0" />
-                      <span>Facebook</span>
+                      <span>@rodeowatches</span>
                     </a>
                   </div>
                 </div>
@@ -166,19 +156,19 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             <div className="p-5 rounded-2xl bg-[#f4efe6] border border-[#e2e8f0] shadow-xs space-y-2 text-xs text-[#475569]">
               <div className="flex items-center gap-2 text-[#0c1b33] font-semibold">
                 <Clock className="w-4 h-4 text-[#c5a059]" />
-                <span>Visiting Hours & Schedule</span>
+                <span>Visiting Hours & Appointments</span>
               </div>
               <p className="leading-relaxed">
-                To guarantee uninterrupted, dedicated attention for examining specific watches or discussing style preferences, we recommend calling ahead at <strong>+41 79 966 01 56</strong> or submitting an appointment enquiry.
+                To guarantee uninterrupted, dedicated attention for examining specific watches or fine jewelry, we recommend calling ahead at <strong>{phoneNumber}</strong>, messaging on WhatsApp, or submitting an appointment enquiry.
               </p>
             </div>
           </div>
 
-          {/* Right Column: Google Maps Embed matching height and borders evenly */}
+          {/* Right Column: Google Maps Embed */}
           <div className="flex flex-col h-full min-h-[460px] lg:min-h-full">
             <div className="rounded-2xl overflow-hidden border border-[#e2e8f0] shadow-xs bg-[#f4efe6] relative flex-1 h-full min-h-[420px] lg:min-h-full">
               <iframe
-                title="Google Maps Location of Intemporel_geneve in Geneva, Switzerland"
+                title="Google Maps Location of Rodeo Watch & Jewelry in Los Angeles, California"
                 src={mapsEmbedSrc}
                 width="100%"
                 height="100%"
@@ -192,8 +182,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               {/* Floating map action banner */}
               <div className="absolute bottom-4 left-4 right-4 sm:left-auto sm:right-4 bg-[#0c1b33]/90 backdrop-blur-md text-white p-3.5 rounded-xl border border-white/20 shadow-lg flex items-center justify-between gap-4">
                 <div className="text-left">
-                  <div className="text-xs font-bold text-white">Route des Jeunes 4bis</div>
-                  <div className="text-[11px] text-[#dfc181]">Geneva, Switzerland, 1227</div>
+                  <div className="text-xs font-bold text-white">550 S Hill St Ste 1238</div>
+                  <div className="text-[11px] text-[#dfc181]">Los Angeles, CA 90013, United States</div>
                 </div>
                 <a
                   href={directionsUrl}
@@ -209,7 +199,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         </div>
       </div>
 
-      {/* FOOTER: Integral part of the Contact section */}
+      {/* FOOTER */}
       <footer className="bg-[#0c1b33] text-white pt-14 pb-10 border-t border-[#c5a059]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
@@ -217,24 +207,24 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             <div className="space-y-4">
               <div>
                 <h3 className="font-serif text-2xl font-bold tracking-wider text-white uppercase">
-                  Intemporel_geneve
+                  Rodeo Watch & Jewelry
                 </h3>
                 <span className="text-xs font-semibold tracking-[0.25em] text-[#dfc181] uppercase block mt-0.5">
-                  Boutique • Geneva
+                  Boutique • Los Angeles
                 </span>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                An exclusive Swiss watch boutique in Geneva dedicated to the appreciation of timeless craftsmanship, personal style, and horological elegance.
+                An exclusive luxury watch and fine jewelry boutique in Los Angeles dedicated to timeless craftsmanship, bespoke service, and horological distinction.
               </p>
-              <div className="text-xs text-slate-400">
-                Customer Rating: 4.6 / 5 (30 Reviews)
+              <div className="text-xs text-[#dfc181] font-semibold">
+                Customer Rating: 5.0 (3 stars)
               </div>
             </div>
 
             {/* Navigation Links */}
             <div className="space-y-3">
               <h4 className="text-xs font-bold uppercase tracking-widest text-[#dfc181]">
-                Boutique Navigation
+                Showroom Navigation
               </h4>
               <ul className="space-y-2 text-xs text-slate-300 font-medium">
                 <li>
@@ -246,7 +236,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     }}
                     className="hover:text-[#dfc181] transition-colors"
                   >
-                    Hero Introduction
+                    Hero Overview
                   </a>
                 </li>
                 <li>
@@ -270,7 +260,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     }}
                     className="hover:text-[#dfc181] transition-colors"
                   >
-                    About Intemporel_geneve
+                    About Rodeo Watch & Jewelry
                   </a>
                 </li>
                 <li>
@@ -306,7 +296,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     }}
                     className="hover:text-[#dfc181] transition-colors"
                   >
-                    Customer Trust (4.6★)
+                    Reviews (5.0 ★★★)
                   </a>
                 </li>
                 <li>
@@ -330,16 +320,16 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 Boutique Location
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Route des Jeunes 4bis<br />
-                Geneva, Switzerland, 1227
+                550 S Hill St Ste 1238<br />
+                Los Angeles, CA 90013, United States
               </p>
               <div className="pt-1 space-y-1.5">
                 <a
-                  href="tel:+41799660156"
+                  href={phoneCallHref}
                   className="text-xs text-white hover:text-[#dfc181] font-semibold flex items-center gap-2"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#dfc181]" />
-                  <span>+41 79 966 01 56</span>
+                  <span>{phoneNumber}</span>
                 </a>
                 <a
                   href={`mailto:${emailAddress}`}
@@ -360,52 +350,40 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 Official Social & Messaging
               </h4>
               <p className="text-xs text-slate-300">
-                Connect directly through our official social media and WhatsApp messaging channels.
+                Connect directly through our official Instagram and WhatsApp channels.
               </p>
 
               <div className="flex items-center gap-3 pt-2">
-                {/* 1. Official WhatsApp Button - Active */}
+                {/* 1. Official WhatsApp Button */}
                 <a
                   href={whatsAppUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Chat with Intemporel_geneve on official WhatsApp"
+                  aria-label="Chat with Rodeo Watch & Jewelry on official WhatsApp"
                   className="w-11 h-11 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-all"
-                  title="WhatsApp: +41 79 966 01 56"
+                  title="WhatsApp: +1 310 867 4286"
                 >
                   <WhatsAppIcon className="w-5 h-5 text-white" />
                 </a>
 
-                {/* 2. Official Instagram Profile Link - Active with EXACT URL */}
+                {/* 2. Official Instagram Profile Link */}
                 <a
                   href={instagramProfileUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Follow Intemporel_geneve on official Instagram"
+                  aria-label="Follow Rodeo Watch & Jewelry on Instagram"
                   className="w-11 h-11 rounded-xl bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-all"
-                  title="Instagram: @intemporel_geneve"
+                  title="Instagram: @rodeowatches"
                 >
                   <InstagramIcon className="w-5 h-5 text-white" />
                 </a>
 
-                {/* 3. Official Facebook Page Link - Active */}
+                {/* 3. Telephone Dial Button */}
                 <a
-                  href={facebookUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Visit Intemporel_geneve on Facebook"
-                  className="w-11 h-11 rounded-xl bg-[#1877F2] hover:bg-[#166fe5] text-white flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-all"
-                  title="Facebook: Intemporel.Geneve"
-                >
-                  <FacebookIcon className="w-5 h-5 text-white" />
-                </a>
-
-                {/* 4. Telephone Dial Button - Active */}
-                <a
-                  href="tel:+41799660156"
-                  aria-label="Call Intemporel_geneve directly"
+                  href={phoneCallHref}
+                  aria-label="Call Rodeo Watch & Jewelry directly"
                   className="w-11 h-11 rounded-xl bg-[#162a4d] hover:bg-[#1f3763] border border-white/20 text-[#dfc181] flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-all"
-                  title="Telephone: +41 79 966 01 56"
+                  title="Telephone: +1 310 867 4286"
                 >
                   <Phone className="w-5 h-5" />
                 </a>
@@ -416,10 +394,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           {/* Bottom copyright notice */}
           <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
             <p>
-              © {currentYear} Intemporel_geneve. All rights reserved. Route des Jeunes 4bis, Geneva, Switzerland, 1227.
+              © {currentYear} Rodeo Watch & Jewelry. All rights reserved. {businessAddress}.
             </p>
             <p className="text-[11px] text-slate-500">
-              Presented for horological appreciation & boutique inquiries.
+              Presented for horological appreciation & fine jewelry consultations.
             </p>
           </div>
         </div>
@@ -427,4 +405,3 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
     </section>
   );
 };
-

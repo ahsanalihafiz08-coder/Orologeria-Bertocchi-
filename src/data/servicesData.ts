@@ -142,7 +142,7 @@ export const SERVICES_CARDS: WatchCard[] = [
     subtitle: 'Fixed 24h Steel Bezel • Orange Arrow',
     shortDetails: 'Polar white dial paired with fixed 24-hour steel bezel and high-visibility orange indicator hand.',
     fullDescription: 'The watch of choice for speleologists, volcanologists, and polar explorers. Its distinctive orange 24-hour hand and fixed engraved steel bezel allow explorers to distinguish day from night in extreme conditions.',
-    image: '/images/Xr7tqggF_Rolex-watch-on-white-surface-20261020014057.jpg',
+    image: '/images/CKLCB03J_Rolex-watch-on-white-surface-20261020014057.jpg',
     priceTag: '€12,800',
     highlights: ['Polar white dial with blackened hour markers', 'Fixed 24-hour engraved sunray steel bezel', 'Vibrant orange 24-hour expedition hand', 'Paraflex high-performance shock absorbers'],
     specs: {

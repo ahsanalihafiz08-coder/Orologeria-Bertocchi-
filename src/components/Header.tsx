@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Heart, Menu, X, MapPin, ChevronRight, Compass } from 'lucide-react';
+import { Phone, Heart, Menu, X, ChevronRight } from 'lucide-react';
 
 interface HeaderProps {
   favouritesCount: number;
@@ -17,7 +17,6 @@ export const Header: React.FC<HeaderProps> = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      // Appear when the user scrolls down the website
       if (window.scrollY > 60) {
         setIsScrolled(true);
       } else {
@@ -37,7 +36,7 @@ export const Header: React.FC<HeaderProps> = ({
     { label: 'Breguet Portfolio (9 Cards)', href: '#portfolio', sectionId: 'portfolio' },
     { label: 'Services (36 Cards)', href: '#services', sectionId: 'services' },
     { label: '22-Card Master Showcase', href: '#showcase22', sectionId: 'showcase22' },
-    { label: 'Client Reviews', href: '#testimonials', sectionId: 'testimonials' },
+    { label: 'Client Reviews (5.0 ★★★)', href: '#testimonials', sectionId: 'testimonials' },
     { label: 'Contact & Location', href: '#contact', sectionId: 'contact' },
   ];
 
@@ -55,10 +54,9 @@ export const Header: React.FC<HeaderProps> = ({
             : 'bg-transparent border-none shadow-none py-2.5 sm:py-3.5'
         }`}
       >
-        {/* Compact main navigation container in a single unified line */}
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-11 sm:h-12 gap-2">
-            {/* Left side: Top corner logo kept on left side and made slightly larger */}
+            {/* Left side: Business Name */}
             <div className="flex items-center min-w-0 shrink">
               <a
                 href="#hero"
@@ -73,18 +71,18 @@ export const Header: React.FC<HeaderProps> = ({
                     isScrolled ? 'text-[#0c1b33]' : 'text-white drop-shadow-md'
                   }`}
                 >
-                  Intemporel_geneve
+                  Rodeo Watch & Jewelry
                 </span>
               </a>
             </div>
 
-            {/* Right side: Exactly 3 header icons (phone, heart, three lines) aligned with non-overlapping spacing */}
+            {/* Right side: 3 header icons (phone, heart, menu) */}
             <div className="flex items-center gap-2 sm:gap-2.5 shrink-0 ml-auto">
               {/* 1. Phone Call Icon */}
               <a
-                href="tel:+41799660156"
-                aria-label="Call +41 79 966 01 56"
-                title="Call Boutique: +41 79 966 01 56"
+                href="tel:+13108674286"
+                aria-label="Call +1 310 867 4286"
+                title="Call Rodeo Watch & Jewelry: +1 310 867 4286"
                 className={`w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-full border transition-all shadow-2xs shrink-0 ${
                   isScrolled
                     ? 'border-[#e2e8f0] bg-white hover:bg-[#f4efe6] text-[#0c1b33] hover:text-[#c5a059] hover:border-[#c5a059]'
@@ -119,7 +117,7 @@ export const Header: React.FC<HeaderProps> = ({
                 )}
               </button>
 
-              {/* 3. Three-Line Menu: Stays in default state, turns brown in color ONLY when clicked by the user */}
+              {/* 3. Three-Line Menu */}
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 aria-label="Open boutique navigation menu"
@@ -141,7 +139,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
       </header>
 
-      {/* Navigation Modal / Drawer opened by the Three-Line Menu */}
+      {/* Navigation Drawer */}
       {menuOpen && (
         <div
           role="dialog"
@@ -158,10 +156,10 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="p-5 border-b border-[#e2e8f0] bg-[#f8f5ee] flex items-center justify-between">
               <div>
                 <span className="text-[10px] uppercase font-bold tracking-widest text-[#c5a059] block">
-                  Boutique Navigation
+                  Showroom Navigation
                 </span>
                 <h3 className="font-serif text-lg font-bold text-[#0c1b33]">
-                  Intemporel_geneve
+                  Rodeo Watch & Jewelry
                 </h3>
               </div>
               <button
@@ -192,14 +190,14 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Drawer Footer */}
             <div className="p-5 border-t border-[#e2e8f0] bg-[#f8f5ee] space-y-3">
               <a
-                href="tel:+41799660156"
+                href="tel:+13108674286"
                 className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#0c1b33] text-white text-xs font-semibold uppercase tracking-wider hover:bg-[#162a4d] transition-colors shadow-xs"
               >
                 <Phone className="w-3.5 h-3.5 text-[#c5a059]" />
-                <span>Call +41 79 966 01 56</span>
+                <span>Call +1 310 867 4286</span>
               </a>
               <p className="text-[11px] text-[#475569] text-center">
-                Route des Jeunes 4bis, Geneva, Switzerland, 1227
+                550 S Hill St Ste 1238, Los Angeles, CA 90013, United States
               </p>
             </div>
           </div>

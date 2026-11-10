@@ -37,10 +37,10 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({
 
       {/* 2. WhatsApp Button with Authentic Logo */}
       <a
-        href="https://wa.me/41799660156?text=Bonjour%20Intemporel_geneve,%20je%20souhaite%20des%20informations."
+        href="https://wa.me/13108674286?text=Hello%20Rodeo%20Watch%20%26%20Jewelry,%20I%20would%20like%20information."
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat with Intemporel_geneve on WhatsApp"
+        aria-label="Chat with Rodeo Watch & Jewelry on WhatsApp"
         className="group relative flex items-center justify-center w-12 h-12 sm:w-13 sm:h-13 rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#20ba5a] transition-transform hover:scale-105 active:scale-95 border border-white/20"
       >
         <WhatsAppIcon className="w-6 h-6 text-white" />
@@ -53,15 +53,15 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({
 
       {/* 3. Phone Call Button */}
       <a
-        href="tel:+41799660156"
-        aria-label="Call Intemporel_geneve at +41 79 966 01 56"
+        href="tel:+13108674286"
+        aria-label="Call Rodeo Watch & Jewelry at +1 310 867 4286"
         className="group relative flex items-center justify-center w-12 h-12 sm:w-13 sm:h-13 rounded-full bg-[#0c1b33] text-white shadow-lg hover:bg-[#162a4d] transition-transform hover:scale-105 active:scale-95 border border-[#c5a059]/40"
       >
         <Phone className="w-5 h-5 text-[#c5a059]" />
         <span className="sr-only">Call Store</span>
         {/* Tooltip on desktop */}
         <span className="hidden sm:block absolute right-full mr-3 px-2.5 py-1 text-xs font-semibold text-white bg-[#0c1b33] rounded-md shadow-md opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity whitespace-nowrap border border-[#c5a059]/20">
-          Call +41 79 966 01 56
+          Call +1 310 867 4286
         </span>
       </a>
     </div>

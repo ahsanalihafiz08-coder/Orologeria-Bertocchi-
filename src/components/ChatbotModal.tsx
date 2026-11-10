@@ -27,7 +27,7 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
     {
       id: 'welcome-1',
       sender: 'bot',
-      text: 'Bonjour! Welcome to Intemporel_geneve in Geneva, Switzerland. I am your digital boutique assistant. How may I assist you with our timepieces and services today?',
+      text: 'Hello! Welcome to Rodeo Watch & Jewelry in Los Angeles, California. I am your digital boutique assistant. How may I assist you with our luxury timepieces and services today?',
     },
   ]);
   const [input, setInput] = useState('');
@@ -58,8 +58,8 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
       let botResponse = '';
       let botAction: { label: string; onClick: () => void } | undefined = undefined;
 
-      if (q.includes('address') || q.includes('where') || q.includes('location') || q.includes('geneva') || q.includes('geneve') || q.includes('find you')) {
-        botResponse = 'Our boutique is located at Route des Jeunes 4bis, Geneva, Switzerland, 1227. We welcome you to visit us in Geneva.';
+      if (q.includes('address') || q.includes('where') || q.includes('location') || q.includes('los angeles') || q.includes('la') || q.includes('california') || q.includes('find you')) {
+        botResponse = 'Our boutique is located at 550 S Hill St Ste 1238, Los Angeles, CA 90013, United States. We welcome you to visit us in Los Angeles.';
         botAction = {
           label: 'View Contact & Map Section',
           onClick: () => {
@@ -68,27 +68,27 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
           },
         };
       } else if (q.includes('phone') || q.includes('call') || q.includes('telephone') || q.includes('number')) {
-        botResponse = 'You can reach Intemporel_geneve directly at +41 79 966 01 56 during store opening periods.';
+        botResponse = 'You can reach Rodeo Watch & Jewelry directly at +1 310 867 4286 during store opening periods.';
         botAction = {
-          label: 'Call +41 79 966 01 56',
+          label: 'Call +1 310 867 4286',
           onClick: () => {
-            window.location.href = 'tel:+41799660156';
+            window.location.href = 'tel:+13108674286';
           },
         };
       } else if (q.includes('whatsapp') || q.includes('chat') || q.includes('message')) {
-        botResponse = 'You can chat directly with our boutique via official WhatsApp at +41 79 966 01 56.';
+        botResponse = 'You can chat directly with our boutique via official WhatsApp at +1 310 867 4286.';
         botAction = {
           label: 'Open WhatsApp Chat',
           onClick: () => {
-            window.open('https://wa.me/41799660156', '_blank');
+            window.open('https://wa.me/13108674286', '_blank');
           },
         };
       } else if (q.includes('email') || q.includes('mail')) {
-        botResponse = 'You can email our boutique directly at contact@intemporel-geneve.ch.';
+        botResponse = 'You can email our boutique directly at rodeowatches@gmail.com.';
         botAction = {
           label: 'Send Email',
           onClick: () => {
-            window.location.href = 'mailto:contact@intemporel-geneve.ch';
+            window.location.href = 'mailto:rodeowatches@gmail.com';
           },
         };
       } else if (q.includes('appointment') || q.includes('book') || q.includes('booking') || q.includes('visit') || q.includes('consult')) {
@@ -119,7 +119,7 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
           },
         };
       } else if (q.includes('rating') || q.includes('review') || q.includes('reputation') || q.includes('trust')) {
-        botResponse = 'Intemporel_geneve holds a customer rating of 4.6 out of 5 stars across 30 customer reviews. We pride ourselves on attentive, courteous service.';
+        botResponse = 'Rodeo Watch & Jewelry holds an outstanding 5.0 (3 stars) customer rating. We pride ourselves on attentive, courteous service and fine horology expertise.';
         botAction = {
           label: 'View Customer Trust Section',
           onClick: () => {
@@ -127,12 +127,12 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
             onNavigateSection('testimonials');
           },
         };
-      } else if (q.includes('price') || q.includes('cost') || q.includes('how much') || q.includes('euro') || q.includes('chf')) {
+      } else if (q.includes('price') || q.includes('cost') || q.includes('how much') || q.includes('dollar') || q.includes('euro') || q.includes('usd')) {
         botResponse = 'In accordance with luxury horological guidelines, prices are provided on enquiry based on specific configurations and availability. You can click "Booking View" or contact us via WhatsApp for precise pricing.';
       } else if (q.includes('hours') || q.includes('open') || q.includes('time') || q.includes('when')) {
-        botResponse = 'For specific daily opening hours or holiday schedules, please call us directly at +41 79 966 01 56 or send a quick WhatsApp message to ensure the boutique is open for your visit.';
+        botResponse = 'For specific daily opening hours or holiday schedules, please call us directly at +1 310 867 4286 or send a quick WhatsApp message to ensure the boutique is open for your visit.';
       } else {
-        botResponse = 'Thank you for your question. Intemporel_geneve is located at Route des Jeunes 4bis, Geneva, Switzerland, 1227 (+41 79 966 01 56). Would you like to explore our Portfolio or contact us on WhatsApp?';
+        botResponse = 'Thank you for your question. Rodeo Watch & Jewelry is located at 550 S Hill St Ste 1238, Los Angeles, CA 90013, United States (+1 310 867 4286). Would you like to explore our Portfolio or contact us on WhatsApp?';
         botAction = {
           label: 'View Collection',
           onClick: () => {
@@ -177,7 +177,7 @@ export const ChatbotModal: React.FC<ChatbotModalProps> = ({
           </div>
           <div>
             <h3 className="text-sm font-semibold tracking-wide">Boutique Assistant</h3>
-            <span className="text-[10px] text-[#dfc181] block">Intemporel_geneve</span>
+            <span className="text-[10px] text-[#dfc181] block">Rodeo Watch & Jewelry</span>
           </div>
         </div>
         <button
